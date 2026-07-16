@@ -2,7 +2,6 @@
    GLOBAL STYLE
 =================================== */
 
-
 *{
 
     margin:0;
@@ -11,13 +10,11 @@
 
 }
 
-
 html{
 
     scroll-behavior:smooth;
 
 }
-
 
 body{
 
@@ -31,14 +28,9 @@ body{
 
 }
 
-
-
-
-
 /* ===================================
    VARIABLES
 =================================== */
-
 
 :root{
 
@@ -56,14 +48,9 @@ body{
 
 }
 
-
-
-
-
 /* ===================================
    LINKS
 =================================== */
-
 
 a{
 
@@ -73,14 +60,9 @@ a{
 
 }
 
-
-
-
-
 /* ===================================
    LOADING SCREEN
 =================================== */
-
 
 .loading{
 
@@ -183,432 +165,6 @@ a{
 }
 
 
-
-
-
-
-
-/* ===================================
-   BACKGROUND EFFECT
-=================================== */
-
-
-.hero-bg{
-
-
-    position:absolute;
-
-    inset:0;
-
-    overflow:hidden;
-
-    z-index:-1;
-
-
-}
-
-
-
-
-.blur{
-
-
-    position:absolute;
-
-    border-radius:50%;
-
-    filter:blur(100px);
-
-    opacity:.5;
-
-
-}
-
-
-
-.blur-one{
-
-
-    width:400px;
-
-    height:400px;
-
-    background:#2563EB;
-
-    top:-100px;
-
-    left:-100px;
-
-
-}
-
-
-
-.blur-two{
-
-
-    width:350px;
-
-    height:350px;
-
-    background:#60A5FA;
-
-    bottom:-100px;
-
-    right:-100px;
-
-
-}
-
-
-
-
-.grid-bg{
-
-
-    position:absolute;
-
-    inset:0;
-
-
-    background-image:
-
-
-    linear-gradient(
-        rgba(37,99,235,.05) 1px,
-        transparent 1px
-    ),
-
-
-    linear-gradient(
-        90deg,
-        rgba(37,99,235,.05) 1px,
-        transparent 1px
-    );
-
-
-    background-size:40px 40px;
-
-
-}
-
-
-
-
-
-
-
-/* ===================================
-   HERO GLOBAL
-=================================== */
-
-
-.hero{
-
-
-    min-height:100vh;
-
-    position:relative;
-
-    display:flex;
-
-    align-items:center;
-
-
-}
-
-
-
-.hero-container{
-
-
-    width:90%;
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-
-}
-
-
-
-
-
-/* ===================================
-   HERO TEXT
-=================================== */
-
-
-.hero-content{
-
-
-    max-width:600px;
-
-
-}
-
-
-
-.hello{
-
-
-    color:var(--primary);
-
-    font-weight:600;
-
-    margin-bottom:15px;
-
-
-}
-
-
-
-.hero-content h1{
-
-
-    font-size:55px;
-
-    line-height:1.15;
-
-    font-weight:800;
-
-    color:var(--dark);
-
-
-}
-
-
-
-.hero-content h2{
-
-
-    margin-top:25px;
-
-    font-size:32px;
-
-    color:var(--primary);
-
-
-}
-
-
-
-.role{
-
-
-    margin-top:15px;
-
-    color:var(--gray);
-
-    font-size:18px;
-
-    line-height:1.8;
-
-
-}
-
-
-
-
-
-
-/* ===================================
-   BUTTON
-=================================== */
-
-
-.hero-buttons{
-
-
-    display:flex;
-
-    gap:20px;
-
-    margin-top:35px;
-
-
-}
-
-
-
-
-.btn-primary,
-.btn-secondary{
-
-
-    padding:14px 30px;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    transition:.3s;
-
-
-}
-
-
-
-.btn-primary{
-
-
-    background:var(--primary);
-
-    color:white;
-
-    box-shadow:0 10px 30px rgba(37,99,235,.3);
-
-
-}
-
-
-
-
-.btn-primary:hover{
-
-
-    transform:translateY(-5px);
-
-}
-
-
-
-
-
-.btn-secondary{
-
-
-    border:2px solid var(--primary);
-
-    color:var(--primary);
-
-
-}
-
-
-
-.btn-secondary:hover{
-
-
-    background:var(--primary);
-
-    color:white;
-
-
-}
-
-
-
-
-
-
-
-/* ===================================
-   HERO IMAGE
-=================================== */
-
-
-.hero-image{
-
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-
-}
-
-
-
-.photo-frame{
-
-
-    width:360px;
-
-    height:360px;
-
-    border-radius:50%;
-
-    padding:8px;
-
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #2563EB,
-        #60A5FA
-    );
-
-
-    animation:float 5s ease-in-out infinite;
-
-
-}
-
-
-
-.photo-frame img{
-
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    background:white;
-
-
-}
-
-
-
-
-
-@keyframes float{
-
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-
-    50%{
-
-        transform:translateY(-15px);
-
-    }
-
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-
-}
-
-
-
-
-
-
-
 /* ===================================
    SECTION
 =================================== */
@@ -659,8 +215,6 @@ a{
 /* ===================================
    SKILLS
 =================================== */
-
-
 .skills-list{
 
 
@@ -675,122 +229,46 @@ a{
 
 }
 
-
-
 .skills-list span{
-
-
     padding:12px 25px;
-
     border-radius:50px;
-
     background:#EFF6FF;
-
     color:#2563EB;
-
     font-weight:600;
-
-
 }
-
-
-
-
-
-
 /* ===================================
    FOOTER
 =================================== */
-
-
 footer{
-
-
     padding:30px;
-
     text-align:center;
-
     background:#111827;
-
     color:white;
-
-
 }
-
-
-
-
-
-
 
 /* ===================================
    SCROLLBAR
 =================================== */
-
-
 ::-webkit-scrollbar{
-
-
     width:10px;
-
-
 }
-
-
-
 ::-webkit-scrollbar-thumb{
-
-
     background:#2563EB;
-
     border-radius:20px;
-
-
 }
-
 .hidden{
-
     opacity:0;
-
     transform:translateY(40px);
-
     transition:1s ease;
-
 }
-
-
 .show{
-
     opacity:1;
-
     transform:translateY(0);
-
 }
-
-.hero-description{
-
-    margin-top:20px;
-
-    color:#6B7280;
-
-    max-width:500px;
-
-    line-height:1.8;
-
-}
-
-
-
 .home-section{
-
     padding:80px 10%;
-
     background:white;
-
 }
-
-
-
 .home-section h2{
 
     font-size:38px;
@@ -798,8 +276,6 @@ footer{
     margin-bottom:20px;
 
 }
-
-
 
 .more-link{
 
@@ -1736,9 +1212,6 @@ footer{
 
 
 }
-
-
-
 .menu-toggle.open{
 
 
