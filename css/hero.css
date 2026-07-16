@@ -1,0 +1,447 @@
+/* ===================================
+   HERO SECTION
+=================================== */
+
+
+.hero{
+
+
+    padding-top:120px;
+
+
+}
+
+
+
+
+
+/* ===================================
+   HERO CONTENT ANIMATION
+=================================== */
+
+
+.hero-content{
+
+
+    animation:heroLeft 1s ease forwards;
+
+
+    opacity:0;
+
+
+}
+
+
+
+@keyframes heroLeft{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ===================================
+   TEXT EFFECT
+=================================== */
+
+
+.hero-content h1{
+
+
+    letter-spacing:-1px;
+
+
+}
+
+
+
+
+.hero-content h1 span{
+
+
+    color:#2563EB;
+
+
+}
+
+
+
+
+
+
+
+/* ===================================
+   HERO IMAGE ANIMATION
+=================================== */
+
+
+.hero-image{
+
+
+    animation:heroRight 1.2s ease forwards;
+
+
+    opacity:0;
+
+
+}
+
+
+
+
+@keyframes heroRight{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateX(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ===================================
+   PHOTO PREMIUM EFFECT
+=================================== */
+
+
+.photo-frame{
+
+
+    position:relative;
+
+
+}
+
+
+
+
+.photo-frame::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:-20px;
+
+
+    border-radius:50%;
+
+
+    background:#2563EB;
+
+
+    opacity:.15;
+
+
+    filter:blur(40px);
+
+
+    z-index:-1;
+
+
+    animation:pulseGlow 3s infinite;
+
+
+}
+
+
+
+
+
+@keyframes pulseGlow{
+
+
+    0%{
+
+
+        transform:scale(.9);
+
+        opacity:.2;
+
+
+    }
+
+
+    50%{
+
+
+        transform:scale(1.15);
+
+        opacity:.4;
+
+
+    }
+
+
+    100%{
+
+
+        transform:scale(.9);
+
+        opacity:.2;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* ===================================
+   BUTTON PREMIUM EFFECT
+=================================== */
+
+
+.btn-primary{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+.btn-primary::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:-100%;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    background:
+
+    linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,255,255,.5),
+
+    transparent
+
+    );
+
+
+    transition:.6s;
+
+
+}
+
+
+
+.btn-primary:hover::before{
+
+
+    left:100%;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===================================
+   ROLE TEXT
+=================================== */
+
+
+.role{
+
+
+    position:relative;
+
+
+    padding-left:20px;
+
+
+}
+
+
+
+.role::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:0;
+
+
+    top:8px;
+
+
+    width:5px;
+
+
+    height:70px;
+
+
+    border-radius:10px;
+
+
+    background:#2563EB;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===================================
+   MOUSE FLOAT EFFECT
+=================================== */
+
+
+.hero:hover .photo-frame{
+
+
+    transform:translateY(-10px);
+
+
+}
+
+
+
+
+
+
+/* ===================================
+   RESPONSIVE PREPARATION
+=================================== */
+
+
+@media(max-width:900px){
+
+
+    .hero-container{
+
+
+        flex-direction:column;
+
+
+        text-align:center;
+
+
+        gap:50px;
+
+
+    }
+
+
+
+    .role{
+
+
+        padding-left:0;
+
+
+    }
+
+
+
+    .role::before{
+
+
+        display:none;
+
+
+    }
+
+
+
+    .hero-buttons{
+
+
+        justify-content:center;
+
+
+    }
+
+
+}
