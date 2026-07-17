@@ -1,100 +1,525 @@
 /* ===================================
    CONTACT PAGE
 =================================== */
+
+
+/* ===================================
+   HERO
+=================================== */
+
+
+.contact-hero{
+
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:150px 20px 80px;
+
+}
+
+
+
 .contact-container{
 
+    max-width:900px;
+
+}
+
+
+
+.contact-tag{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.contact-container h1{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    color:var(--dark);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.contact-container p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#6B7280;
+
+}
+
+
+
+
+
+
+/* ===================================
+   CONTACT SECTION
+=================================== */
+
+
+.contact-section{
 
     padding:80px 10%;
+
+}
+
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+
+/* ===================================
+   CARD STYLE
+=================================== */
+
+
+.contact-card,
+.live-card{
+
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.06);
+
+
+}
+
+
+
+.contact-card h2,
+.live-card h2{
+
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    color:var(--dark);
+
+
+}
+
+
+
+
+.contact-desc{
+
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+
+
+
+
+/* ===================================
+   CONTACT ITEM
+=================================== */
+
+
+.contact-item{
 
 
     display:flex;
 
+    gap:20px;
 
-    gap:50px;
+    align-items:flex-start;
 
+    margin-bottom:30px;
+
+
+}
+
+
+
+.contact-icon{
+
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
 
     align-items:center;
 
+    border-radius:15px;
+
+    background:#EFF6FF;
+
+    font-size:24px;
+
 
 }
-.contact-info{
 
 
-    flex:1;
+
+.contact-item h3{
+
+
+    font-size:18px;
+
+    margin-bottom:8px;
+
+    color:var(--dark);
 
 
 }
-.contact-info h2,
-.cv-box h2{
 
 
-    font-size:35px;
 
+.contact-item a,
+.contact-item p{
+
+
+    display:block;
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+    transition:.3s;
+
+
+}
+
+
+
+.contact-item a:hover{
+
+
+    color:var(--primary);
+
+
+}
+
+
+
+
+
+
+/* ===================================
+   LIVE INFORMATION
+=================================== */
+
+
+.live-box{
+
+
+    padding:30px;
+
+    border-radius:25px;
+
+    background:#F8FAFC;
+
+    margin-bottom:25px;
+
+    border:1px solid rgba(0,0,0,.06);
+
+
+}
+
+
+
+.live-box span{
+
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:14px;
+
+
+}
+
+
+
+.live-box h3{
+
+
+    font-size:32px;
+
+    margin:15px 0;
+
+    color:var(--dark);
+
+
+}
+
+
+
+.live-box p{
+
+
+    color:#6B7280;
+
+}
+
+
+
+
+
+
+
+/* ===================================
+   CTA
+=================================== */
+
+
+.contact-cta{
+
+
+    text-align:center;
+
+    padding:100px 20px;
+
+
+    background:#08111F;
+
+    color:white;
+
+
+}
+
+
+
+.contact-cta h2{
+
+
+    font-size:40px;
 
     margin-bottom:20px;
 
 
 }
-.contact-info p{
 
 
-    color:#6B7280;
+
+.contact-cta p{
 
 
-    line-height:1.8;
+    color:#AAB4C5;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.cta-buttons{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.contact-cta .btn-primary{
+
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
 
 
 }
-.contact-item{
 
 
-    margin-top:25px;
+
+.contact-cta .btn-secondary{
 
 
-}
-.contact-item h3{
+    border:1px solid rgba(255,255,255,.3);
 
+    color:white;
 
-    color:#2563EB;
+    padding:15px 35px;
 
+    border-radius:50px;
 
-    margin-bottom:5px;
-
-
-}
-.contact-item a{
-
-
-    color:#374151;
+    font-weight:600;
 
 
 }
-.cv-box{
 
 
-    flex:1;
 
 
-    padding:40px;
 
 
-    background:#F8FAFC;
+
+/* ===================================
+   RESPONSIVE
+=================================== */
 
 
-    border-radius:30px;
+@media(max-width:900px){
+
+
+.contact-grid{
+
+
+    grid-template-columns:1fr;
 
 
 }
-.cv-box p{
 
 
-    color:#6B7280;
+
+.contact-container h1{
 
 
-    line-height:1.8;
+    font-size:42px;
 
 
-    margin-bottom:30px;
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.contact-section{
+
+
+    padding:60px 6%;
+
+
+}
+
+
+
+.contact-card,
+.live-card{
+
+
+    padding:30px;
+
+
+}
+
+
+
+.contact-container h1{
+
+
+    font-size:34px;
+
+
+}
+
+
+
+.contact-container p{
+
+
+    font-size:16px;
+
+
+}
+
+
+
+.contact-cta h2{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+.cta-buttons{
+
+
+    flex-direction:column;
+
+
+}
+
 
 
 }

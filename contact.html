@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
 
-
 <meta charset="UTF-8">
-
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,6 +13,7 @@ Contact | Robi Septiawan
 </title>
 
 
+<!-- Google Font -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -26,37 +24,46 @@ Contact | Robi Septiawan
 
 
 
+<!-- CSS -->
+
 <link rel="stylesheet" href="css/style.css">
 
 <link rel="stylesheet" href="css/navbar.css">
 
+<link rel="stylesheet" href="css/contact.css">
+
+<link rel="stylesheet" href="css/footer.css">
+
 <link rel="stylesheet" href="css/responsive.css">
 
 
-
 </head>
+
 
 
 <body>
 
 
 
-
+<!-- LOADING -->
 
 <div class="loading">
 
-<div class="loader-logo">
+    <div class="loader-logo">
 
-RS.
+        RS.
+
+    </div>
 
 </div>
 
-</div>
 
 
 
 
-
+<!-- ===========================
+        NAVBAR
+=========================== -->
 
 
 <header>
@@ -74,48 +81,45 @@ RS.
 
 
 
-
 <ul class="nav-links">
 
 
 <li>
+
 <a href="index.html">
+
 Home
+
 </a>
+
 </li>
 
 
+
 <li>
+
 <a href="about.html">
+
 About
+
 </a>
+
 </li>
 
 
-<li>
-<a href="experience.html">
-Experience
-</a>
-</li>
-
 
 <li>
-<a href="projects.html">
-Projects
-</a>
-</li>
 
+<a href="portfolio.html">
 
-<li>
-<a href="certificates.html">
-Certificates
+Portfolio
+
 </a>
+
 </li>
 
 
 </ul>
-
-
 
 
 
@@ -131,7 +135,7 @@ Certificates
 
 
 
-<a href="contact.html" class="contact-btn">
+<a href="contact.html" class="contact-btn active">
 
 Contact
 
@@ -139,7 +143,6 @@ Contact
 
 
 </div>
-
 
 
 
@@ -162,27 +165,47 @@ Contact
 
 
 
+<!-- ===========================
+        CONTACT HERO
+=========================== -->
+
+
+<section class="contact-hero">
+
+
+<div class="contact-container">
 
 
 
-<section class="page-header">
+<span class="contact-tag">
 
+CONTACT ME
 
-<div>
+</span>
 
-
-<p>
-
-Contact
-
-</p>
 
 
 <h1>
 
-Let's Work Together
+Say Hello 👋
+
+<br>
+
+Let's Build Something Great Together
 
 </h1>
+
+
+
+<p>
+
+I'm always open to discussing engineering opportunities,
+industrial automation projects,
+technical collaboration,
+and new professional connections.
+
+</p>
+
 
 
 </div>
@@ -198,14 +221,24 @@ Let's Work Together
 
 
 
-<section class="contact-container">
+<!-- ===========================
+        CONTACT CONTENT
+=========================== -->
+
+
+<section class="contact-section">
+
+
+<div class="contact-grid">
 
 
 
 
 
+<!-- CONTACT INFO -->
 
-<div class="contact-info">
+
+<div class="contact-card">
 
 
 <h2>
@@ -216,12 +249,11 @@ Get In Touch
 
 
 
-<p>
+<p class="contact-desc">
 
-Interested in electrical engineering,
-automation systems,
-or technical projects?
+Feel free to contact me through the information below.
 
+I will be happy to discuss opportunities and collaborations.
 
 </p>
 
@@ -229,10 +261,17 @@ or technical projects?
 
 
 
-
-
 <div class="contact-item">
 
+
+<div class="contact-icon">
+
+📧
+
+</div>
+
+
+<div>
 
 <h3>
 
@@ -241,11 +280,21 @@ Email
 </h3>
 
 
-<a href="mailto:robi@email.com">
+<a href="mailto:robiseptiawan15@gmail.com">
 
-robi@email.com
+robiseptiawan15@gmail.com
 
 </a>
+
+
+<a href="mailto:robiseptiawan49@gmail.com">
+
+robiseptiawan49@gmail.com
+
+</a>
+
+
+</div>
 
 
 </div>
@@ -259,18 +308,30 @@ robi@email.com
 <div class="contact-item">
 
 
+<div class="contact-icon">
+
+📱
+
+</div>
+
+
+<div>
+
 <h3>
 
-LinkedIn
+Phone
 
 </h3>
 
 
-<a href="#" target="_blank">
+<a href="tel:082125754987">
 
-linkedin.com/in/robi-septiawan
+0821 2575 4987
 
 </a>
+
+
+</div>
 
 
 </div>
@@ -284,18 +345,30 @@ linkedin.com/in/robi-septiawan
 <div class="contact-item">
 
 
+<div class="contact-icon">
+
+📍
+
+</div>
+
+
+<div>
+
 <h3>
 
-WhatsApp
+Location
 
 </h3>
 
 
-<a href="#">
+<p>
 
-+62 xxx xxxx xxxx
+Jakarta, Indonesia
 
-</a>
+</p>
+
+
+</div>
 
 
 </div>
@@ -312,50 +385,151 @@ WhatsApp
 
 
 
-<div class="cv-box">
+<!-- LIVE INFO -->
+
+
+<div class="live-card">
 
 
 <h2>
 
-Download CV
+Live Information
 
 </h2>
 
 
 
+
+
+<div class="live-box">
+
+
+<span>
+
+🕒 Local Time
+
+</span>
+
+
+
+<h3 id="wib-time">
+
+Loading...
+
+</h3>
+
+
+
 <p>
 
-Complete information about my
-education, experience,
-and technical skills.
+Jakarta, Indonesia (WIB UTC+7)
 
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="live-box">
+
+
+<span>
+
+🌤 Weather
+
+</span>
+
+
+
+<h3 id="weather">
+
+Loading...
+
+</h3>
+
+
+
+<p id="weather-detail">
+
+Checking weather condition...
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ===========================
+        CTA
+=========================== -->
+
+
+<section class="contact-cta">
+
+
+<h2>
+
+Ready to Work Together?
+
+</h2>
+
+
+<p>
+
+Let's connect and discuss how we can create reliable engineering solutions.
 
 </p>
 
 
 
 
-<a 
-
-href="assets/cv/CV_Robi_Septiawan.pdf"
-
-download
-
-class="btn-primary">
+<div class="cta-buttons">
 
 
-Download CV PDF
+<a href="mailto:robiseptiawan15@gmail.com" class="btn-primary">
+
+Send Email
 
 </a>
 
 
 
+<a href="assets/cv/Robi-Septiawan-CV.pdf" class="btn-secondary">
+
+Download CV
+
+</a>
+
+
 
 </div>
-
-
-
-
 
 
 
@@ -369,12 +543,13 @@ Download CV PDF
 
 
 
-<footer>
+<footer class="footer">
 
 
 <p>
 
-© 2026 Robi Septiawan
+© 2026 Robi Septiawan.
+All Rights Reserved.
 
 </p>
 
@@ -384,10 +559,12 @@ Download CV PDF
 
 
 
-<script src="js/script.js"></script>
 
+
+<script src="js/contact.js"></script>
 
 
 </body>
+
 
 </html>

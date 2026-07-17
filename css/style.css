@@ -244,15 +244,6 @@ a{
     color:#2563EB;
     font-weight:600;
 }
-/* ===================================
-   FOOTER
-=================================== */
-footer{
-    padding:30px;
-    text-align:center;
-    background:#111827;
-    color:white;
-}
 
 /* ===================================
    SCROLLBAR
@@ -297,32 +288,6 @@ footer{
 
 }
 
-
-
-.project-preview{
-
-    display:flex;
-
-    gap:25px;
-
-    margin-top:30px;
-
-}
-
-
-
-.project-card{
-
-    padding:30px;
-
-    background:#F8FAFC;
-
-    border-radius:20px;
-
-}
-
-
-
 .contact-banner{
 
     padding:80px 10%;
@@ -357,81 +322,6 @@ footer{
 
 }
 
-/* ===================================
-   MOBILE NAV MENU
-=================================== */
-
-@media(max-width:900px){
-
-.nav-links{
-
-
-    position:absolute;
-
-
-    top:80px;
-
-
-    left:0;
-
-
-    width:100%;
-
-
-    flex-direction:column;
-
-
-    background:white;
-
-
-    padding:30px;
-
-
-    border-radius:25px;
-
-
-    box-shadow:0 20px 40px rgba(0,0,0,.1);
-
-
-    display:none;
-
-
-}
-
-.nav-links.active{
-
-
-    display:flex;
-
-
-}
-
-
-
-.nav-right{
-
-
-    display:none;
-
-
-}
-
-
-}
-
-.menu-toggle{
-
-
-    transition:.3s;
-
-
-}
-.menu-toggle.open{
-
-
-    transform:rotate(90deg);
-}
-
 /* ======================================
    GLOBAL TRANSITION
 ====================================== */
@@ -442,5 +332,17 @@ input,
 textarea{
 
     transition:all .3s ease;
+
+}
+
+:root{
+
+    --primary:#2F6BFF;
+
+    --primary-hover:#1E5AEF;
+
+    --dark:#08111F;
+
+    --gray:#6B7280;
 
 }
