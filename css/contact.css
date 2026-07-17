@@ -1,0 +1,100 @@
+/* ===================================
+   CONTACT PAGE
+=================================== */
+.contact-container{
+
+
+    padding:80px 10%;
+
+
+    display:flex;
+
+
+    gap:50px;
+
+
+    align-items:center;
+
+
+}
+.contact-info{
+
+
+    flex:1;
+
+
+}
+.contact-info h2,
+.cv-box h2{
+
+
+    font-size:35px;
+
+
+    margin-bottom:20px;
+
+
+}
+.contact-info p{
+
+
+    color:#6B7280;
+
+
+    line-height:1.8;
+
+
+}
+.contact-item{
+
+
+    margin-top:25px;
+
+
+}
+.contact-item h3{
+
+
+    color:#2563EB;
+
+
+    margin-bottom:5px;
+
+
+}
+.contact-item a{
+
+
+    color:#374151;
+
+
+}
+.cv-box{
+
+
+    flex:1;
+
+
+    padding:40px;
+
+
+    background:#F8FAFC;
+
+
+    border-radius:30px;
+
+
+}
+.cv-box p{
+
+
+    color:#6B7280;
+
+
+    line-height:1.8;
+
+
+    margin-bottom:30px;
+
+
+}

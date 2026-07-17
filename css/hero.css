@@ -22,11 +22,11 @@
 
     width:100%;
 
-    max-width:1200px;
+    max-width:1400px;
 
     margin:auto;
 
-    padding:150px 8% 80px;
+    padding:150px 3% 80px 3%;
 
     position:relative;
 
@@ -44,8 +44,8 @@
 
     gap:18px;
 
-    margin-bottom:35px;
-
+    margin-bottom:25px;
+    transform:translateY(-30px);
 }
 
 .intro-avatar{
@@ -70,7 +70,7 @@
 
     font-size:15px;
 
-    margin-bottom:5px;
+    margin-bottom:-5px;
 
 }
 
@@ -94,7 +94,8 @@
 
     font-size:16px;
 
-    margin-bottom:28px;
+    margin-bottom:-20px;
+    transform:translateY(-35px);
 
 }
 
@@ -104,15 +105,15 @@
 
     color:#fff;
 
-    font-size:70px;
+    font-size:65px;
 
     line-height:1.05;
 
     font-weight:700;
 
-    max-width:900px;
+    max-width:1500px;
 
-    margin-bottom:30px;
+    margin-bottom:20px;
 
 }
 
@@ -132,7 +133,7 @@
 
     line-height:1.9;
 
-    max-width:920px;
+    max-width:1500px;
 
 }
 
@@ -140,7 +141,7 @@
 
 .hero-buttons{
 
-    margin-top:55px;
+    margin-top:15px;
 
 }
 
