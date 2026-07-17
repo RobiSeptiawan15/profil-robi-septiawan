@@ -208,32 +208,16 @@ function sendEmail(){
     const email = document.getElementById("email-choice").value;
 
 
-
-    if(email === ""){
-
+    if(!email){
 
         alert("Please select contact destination.");
 
-
         return;
-
 
     }
 
 
-
-    const subject = 
-    "Engineering Opportunity - Robi Septiawan";
-
-
-
-    const body =
-    "Hello Robi,%0A%0AI would like to discuss an engineering opportunity.%0A%0ARegards,";
-
-
-
-    window.location.href =
-    `mailto:${email}?subject=${subject}&body=${body}`;
+    window.location.href = "mailto:" + email;
 
 
 }

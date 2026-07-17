@@ -1,0 +1,576 @@
+/* ===================================
+   ELECTRICAL CONTROL SYSTEMS PAGE
+=================================== */
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+
+.control-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+/* ===========================
+   HERO
+=========================== */
+
+
+.control-hero{
+
+    min-height:75vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:160px 20px 100px;
+
+    background:
+
+    radial-gradient(circle at top right,
+    rgba(37,99,235,.25),
+    transparent 40%),
+
+    linear-gradient(
+    135deg,
+    #08111F,
+    #111827
+    );
+
+    color:white;
+
+}
+
+
+
+.control-tag{
+
+    display:inline-block;
+
+    color:#60A5FA;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.control-hero h1{
+
+    font-size:56px;
+
+    line-height:1.2;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.control-hero h1 span{
+
+    color:#60A5FA;
+
+}
+
+
+
+.control-hero p{
+
+    max-width:750px;
+
+    margin:30px auto 0;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#CBD5E1;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   SECTION
+=========================== */
+
+
+.control-section{
+
+    padding:100px 20px;
+
+    background:#F8FAFC;
+
+}
+
+
+
+.section-title{
+
+    margin-bottom:50px;
+
+}
+
+
+
+.section-title span{
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+
+
+.section-title h2{
+
+    margin-top:15px;
+
+    font-size:42px;
+
+    color:#08111F;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   CARD
+=========================== */
+
+
+.control-card,
+.control-box,
+.project-box{
+
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.06);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.control-card:hover,
+.control-box:hover,
+.project-box:hover{
+
+
+    transform:translateY(-8px);
+
+
+    border-color:#2563EB;
+
+
+}
+
+
+
+.control-card p{
+
+
+    color:#4B5563;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   GRID
+=========================== */
+
+
+.control-grid{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+.control-box h3{
+
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    color:#111827;
+
+
+}
+
+
+
+.control-box p{
+
+
+    color:#6B7280;
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   WORKFLOW
+=========================== */
+
+
+.workflow{
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+
+}
+
+
+
+
+.workflow div{
+
+
+    background:#08111F;
+
+    color:white;
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   PROJECT
+=========================== */
+
+
+.project-box h3{
+
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.project-box p{
+
+
+    color:#4B5563;
+
+    line-height:1.8;
+
+
+}
+
+
+
+.tags{
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:25px;
+
+
+}
+
+
+
+.tags span{
+
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   CTA
+=========================== */
+
+
+.control-cta{
+
+
+    padding:100px 20px;
+
+    text-align:center;
+
+    background:#08111F;
+
+    color:white;
+
+
+}
+
+
+
+.control-cta h2{
+
+
+    font-size:40px;
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.control-cta a{
+
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#2563EB;
+
+    border-radius:50px;
+
+    color:white;
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+
+footer{
+
+
+    padding:30px;
+
+    text-align:center;
+
+    background:#050B14;
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+
+@media(max-width:900px){
+
+
+.control-hero h1{
+
+    font-size:42px;
+
+}
+
+
+
+.control-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.workflow{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.control-hero{
+
+    padding-top:130px;
+
+}
+
+
+
+.control-hero h1{
+
+    font-size:34px;
+
+}
+
+
+
+.control-hero p{
+
+    font-size:15px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:32px;
+
+}
+
+
+
+.workflow{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.control-card,
+.control-box,
+.project-box{
+
+
+    padding:25px;
+
+
+}
+
+
+}
