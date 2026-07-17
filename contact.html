@@ -39,7 +39,7 @@ Contact | Robi Septiawan
 
 </head>
 
-
+<script src="js/contact.js"></script>
 
 <body>
 
@@ -478,14 +478,6 @@ Checking weather condition...
 
 </section>
 
-
-
-
-
-
-
-
-
 <!-- ===========================
         CTA
 =========================== -->
@@ -509,23 +501,46 @@ Let's connect and discuss how we can create reliable engineering solutions.
 
 
 
+<div class="email-selector">
 
-<div class="cta-buttons">
+
+<select id="email-choice">
 
 
-<a href="mailto:robiseptiawan15@gmail.com" class="btn-primary">
+<option value="">
+
+Select Contact Destination
+
+</option>
+
+
+
+<option value="robiseptiawan15@gmail.com">
+
+🇩🇪 German / International Communication
+
+</option>
+
+
+
+<option value="robiseptiawan49@gmail.com">
+
+🇮🇩 Indonesia Communication
+
+</option>
+
+
+
+</select>
+
+
+
+
+<button onclick="sendEmail()" class="btn-primary">
 
 Send Email
 
-</a>
-
-
-
-<a href="assets/cv/Robi-Septiawan-CV.pdf" class="btn-secondary">
-
-Download CV
-
-</a>
+</button>
 
 
 
@@ -533,15 +548,16 @@ Download CV
 
 
 
+
+<a href="assets/cv/Robi-Septiawan-CV.pdf" class="btn-secondary cv-contact">
+
+Download CV
+
+</a>
+
+
+
 </section>
-
-
-
-
-
-
-
-
 
 <footer class="footer">
 

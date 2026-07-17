@@ -523,3 +523,144 @@
 
 
 }
+
+/* ===================================
+   EMAIL SELECTOR
+=================================== */
+
+
+.email-selector{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+
+
+
+.email-selector select{
+
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:white;
+
+    color:#111827;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    min-width:300px;
+
+
+}
+
+
+
+.email-selector select:focus{
+
+
+    outline:none;
+
+    border-color:#2563EB;
+
+
+}
+
+
+
+.email-selector .btn-primary{
+
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+.cv-contact{
+
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    border:1px solid rgba(255,255,255,.3);
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    color:white;
+
+    transition:.3s;
+
+
+}
+
+
+
+.cv-contact:hover{
+
+
+    background:white;
+
+    color:#08111F;
+
+
+}
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+.email-selector{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.email-selector select{
+
+
+    width:100%;
+
+    min-width:auto;
+
+
+}
+
+
+
+}
