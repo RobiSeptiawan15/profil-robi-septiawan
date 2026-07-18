@@ -38,7 +38,7 @@ switcher.classList.remove("open");
 
 
 
-const savedLanguage = localStorage.getItem("language") || "en";
+const savedLanguage = localStorage.getItem("language") || "de";
 
 loadLanguage(savedLanguage);
 

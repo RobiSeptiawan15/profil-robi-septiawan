@@ -16,19 +16,20 @@ nav_contact: "Kontakt",
 // HERO
 // =====================
 
-hero_hello: "👋 Hallo, ich bin",
+hero_hello:
+"👋  Hallo, ich bin",
 
 hero_tag:
-"Elektroingenieur • Industrieautomation • Steuerungssysteme",
+"Elektroingenieur • Industrielle Automatisierung • SPS-Programmierung",
 
 hero_title:
-"Elektro- & Automatisierungsingenieur für Industrieanlagen",
+"Zuverlässige & effiziente Automatisierungslösungen für die Industrie entwickeln",
 
 hero_description:
-"Spezialisiert auf industrielle Elektrosysteme, SPS-Automatisierung, Schaltschrankverdrahtung, HMI-Konfiguration, Motorantriebssysteme und elektrische Fehlersuche.",
+"Erfahrung in der SPS-Programmierung (Speicherprogrammierbare Steuerung), industrieller Automatisierung, elektrischen Steuerungssystemen, Schaltschrankplanung und Verdrahtung, HMI-Konfiguration, Frequenzumrichtern (VFD), Inbetriebnahme sowie elektrischer Fehlersuche für verschiedene industrielle Anwendungen.",
 
 hero_button:
-"Offen für technische Möglichkeiten",
+"Offen für Engineering-Möglichkeiten",
 
 hero_scroll:
 "↓ Scrollen zum Entdecken",
@@ -41,21 +42,21 @@ hero_scroll:
 // =====================
 
 skills_subtitle:
-"KERNKOMPETENZEN",
+"TECHNISCHE KOMPETENZEN",
 
 skills_title:
-"Technische Expertise",
+"Meine Kenntnisse in Elektrotechnik & Industrieller Automatisierung",
 
 skills_description:
-"Entdecken Sie die technischen Fähigkeiten, die durch industrielle Projekte und praktische Erfahrungen entwickelt wurden.",
+"Ich verfüge über technische Erfahrung in Elektrotechnik, industrieller Automatisierung, Steuerungssystemen und Fertigungstechnik, die ich durch praktische Industrieprojekte entwickelt habe.",
 
 
 
 skill_plc_title:
-"SPS-Programmierung",
+"SPS-Programmierung & Steuerungssysteme",
 
 skill_plc_desc:
-"Speicherprogrammierbare Steuerungen, Automatisierungsprogrammierung und industrielle Steuerungssysteme.",
+"Erfahrung in der SPS-Programmierung, Maschinensteuerung, industriellen Automatisierung und Integration von Steuerungssystemen für Produktionsanlagen.",
 
 
 
@@ -63,15 +64,15 @@ skill_electrical_title:
 "Elektrische Steuerungssysteme",
 
 skill_electrical_desc:
-"Industrielle Schaltschränke, Schutzsysteme und elektrische Schaltungen.",
+"Erfahrung mit industriellen Steuerungssystemen, elektrischen Schaltungen, Schutzsystemen und der Entwicklung von Maschinensteuerungen.",
 
 
 
 skill_drive_title:
-"Motorantriebe",
+"Motoren & Frequenzumrichter",
 
 skill_drive_desc:
-"Frequenzumrichter, Parametereinstellung und Inbetriebnahme von Motoren.",
+"Erfahrung mit Frequenzumrichtern (VFD), Parametereinstellungen, Motorsteuerung und Inbetriebnahme von Antriebssystemen.",
 
 
 
@@ -79,25 +80,23 @@ skill_troubleshoot_title:
 "Elektrische Fehlersuche",
 
 skill_troubleshoot_desc:
-"Fehlerdiagnose, Wartung und technische Problemlösung.",
+"Kenntnisse in Fehleranalyse, Störungsbehebung, Wartung und technischer Problemlösung an industriellen Anlagen.",
 
 
 
 skill_automation_title:
-"Industrieautomation",
+"Industrielle Automatisierung",
 
 skill_automation_desc:
-"Integration von Automatisierung, Sensoren, Aktoren und Steuerungssystemen.",
+"Erfahrung mit Automatisierungssystemen durch SPS, HMI, Sensoren, Aktoren und Steuerungskomponenten zur Verbesserung von Produktionsprozessen.",
 
 
 
 skill_panel_title:
-"Schaltschrankverdrahtung",
+"Schaltschrankbau & Verdrahtung",
 
 skill_panel_desc:
-"Schaltschrankmontage, Verdrahtungsplanung und elektrische Dokumentation.",
-
-
+"Erfahrung in der Planung von Steuerungsschränken, Komponentenlayout, elektrischer Verdrahtung, Installation, Prüfung und technischer Dokumentation.",
 
 
 

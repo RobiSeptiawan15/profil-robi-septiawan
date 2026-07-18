@@ -16,7 +16,8 @@ nav_contact: "Kontak",
 // HERO
 // =====================
 
-hero_hello: "👋 Halo, Saya",
+hero_hello:
+"👋  Halo, Saya",
 
 hero_tag:
 "Electrical Engineer • Industrial Automation • PLC Programming",
@@ -31,9 +32,7 @@ hero_button:
 "Terbuka untuk Kesempatan Engineering",
 
 hero_scroll:
-"↓ Scroll untuk Menjelajah",
-
-
+"↓ Geser untuk Menjelajah",
 
 
 // =====================
@@ -44,18 +43,18 @@ skills_subtitle:
 "KEAHLIAN UTAMA",
 
 skills_title:
-"Keahlian Teknis",
+"Keahlian Saya di Bidang Electrical Engineering & Otomasi Industri",
 
 skills_description:
-"Jelajahi kemampuan engineering yang dikembangkan melalui proyek industri dan pengalaman langsung di lapangan.",
+"Saya memiliki kompetensi dalam bidang electrical engineering, industrial automation, sistem kontrol, dan teknologi manufaktur yang dikembangkan melalui pengalaman proyek industri secara langsung.",
 
 
 
 skill_plc_title:
-"Pemrograman PLC",
+"Pemrograman PLC & Sistem Kontrol",
 
 skill_plc_desc:
-"Programmable Logic Controller, pemrograman otomasi, dan sistem kontrol industri.",
+"Berpengalaman dalam pemrograman Programmable Logic Controller (PLC), logika kontrol mesin, otomasi proses industri, serta integrasi sistem kontrol untuk berbagai aplikasi manufaktur.",
 
 
 
@@ -63,23 +62,23 @@ skill_electrical_title:
 "Sistem Kontrol Elektrikal",
 
 skill_electrical_desc:
-"Panel kontrol industri, sistem proteksi, dan rangkaian kelistrikan.",
+"Memahami desain dan implementasi sistem kontrol listrik industri, rangkaian kelistrikan, proteksi sistem, serta pengembangan panel kontrol mesin.",
 
 
 
 skill_drive_title:
-"Motor Drive",
+"Motor Drive & Inverter",
 
 skill_drive_desc:
-"Variable Frequency Drive, setting inverter, dan commissioning motor.",
+"Berpengalaman dalam konfigurasi Variable Frequency Drive (VFD), setting inverter, kontrol motor listrik, parameterisasi drive, dan commissioning sistem penggerak.",
 
 
 
 skill_troubleshoot_title:
-"Troubleshooting Elektrikal",
+"Electrical Troubleshooting",
 
 skill_troubleshoot_desc:
-"Diagnosa gangguan, maintenance, dan penyelesaian masalah teknis.",
+"Mampu melakukan analisa gangguan listrik, troubleshooting mesin industri, preventive maintenance, serta penyelesaian masalah teknis pada sistem otomasi.",
 
 
 
@@ -87,19 +86,15 @@ skill_automation_title:
 "Otomasi Industri",
 
 skill_automation_desc:
-"Integrasi otomasi, sensor, aktuator, dan sistem kontrol.",
+"Berpengalaman dalam integrasi sistem otomasi industri menggunakan PLC, HMI, sensor, aktuator, dan perangkat kontrol untuk meningkatkan efisiensi proses produksi.",
 
 
 
 skill_panel_title:
-"Wiring Panel Kontrol",
+"Desain & Wiring Panel Kontrol",
 
 skill_panel_desc:
-"Perakitan panel, layout wiring, dan dokumentasi kelistrikan.",
-
-
-
-
+"Berpengalaman dalam perancangan panel kontrol industri, layout komponen listrik, wiring, instalasi, pengujian, dan dokumentasi teknis kelistrikan.",
 
 // =====================
 // PROJECTS

@@ -10,31 +10,27 @@ nav_about: "About",
 nav_portfolio: "Portfolio",
 nav_contact: "Contact",
 
-
-
 // =====================
 // HERO
 // =====================
 
-hero_hello: "👋 Hello, I'm",
+hero_hello:
+"👋 Hello, I'm",
 
 hero_tag:
-"Electrical Engineer • Industrial Automation • Control Systems",
+"Electrical Engineer • Industrial Automation • PLC Programming",
 
 hero_title:
-"Industrial Electrical & Automation Engineer",
+"Building Reliable & Efficient Industrial Automation Solutions",
 
 hero_description:
-"Specializing in industrial electrical systems, PLC automation, control panel wiring, HMI configuration, motor drive systems, and electrical troubleshooting.",
+"Experienced in Programmable Logic Controller (PLC) Programming, Industrial Automation, Electrical Control Systems, Control Panel Design & Wiring, Human Machine Interface (HMI) Configuration, Variable Frequency Drive (VFD) Setup, System Commissioning, and Electrical Troubleshooting for a wide range of industrial applications.",
 
 hero_button:
-"Available for Engineering Opportunities",
+"Open to Engineering Opportunities",
 
 hero_scroll:
 "↓ Scroll to Explore",
-
-
-
 
 // =====================
 // CORE SKILLS
@@ -44,18 +40,18 @@ skills_subtitle:
 "CORE SKILLS",
 
 skills_title:
-"Technical Expertise",
+"My Expertise in Electrical Engineering & Industrial Automation",
 
 skills_description:
-"Explore the engineering skills developed through industrial projects and hands-on experience.",
+"I have technical experience in electrical engineering, industrial automation, control systems, and manufacturing technology developed through hands-on industrial projects.",
 
 
 
 skill_plc_title:
-"PLC Programming",
+"PLC Programming & Control Systems",
 
 skill_plc_desc:
-"Programmable Logic Controllers, automation programming, and industrial control systems.",
+"Experienced in Programmable Logic Controller (PLC) programming, machine control logic, industrial automation processes, and control system integration for manufacturing applications.",
 
 
 
@@ -63,15 +59,15 @@ skill_electrical_title:
 "Electrical Control Systems",
 
 skill_electrical_desc:
-"Industrial control panels, protection systems, and electrical circuits.",
+"Experienced in industrial electrical control systems, electrical circuits, protection systems, and machine control panel development.",
 
 
 
 skill_drive_title:
-"Motor Drives",
+"Motor Drives & Inverters",
 
 skill_drive_desc:
-"Variable Frequency Drives, inverter setup, and motor commissioning.",
+"Experienced in Variable Frequency Drive (VFD) configuration, inverter parameter setting, electric motor control, and drive system commissioning.",
 
 
 
@@ -79,7 +75,7 @@ skill_troubleshoot_title:
 "Electrical Troubleshooting",
 
 skill_troubleshoot_desc:
-"Fault diagnosis, maintenance, and technical problem solving.",
+"Skilled in electrical fault analysis, industrial machine troubleshooting, preventive maintenance, and technical problem solving.",
 
 
 
@@ -87,17 +83,15 @@ skill_automation_title:
 "Industrial Automation",
 
 skill_automation_desc:
-"Automation integration, sensors, actuators, and control systems.",
+"Experienced in automation system integration using PLC, HMI, sensors, actuators, and control devices to improve production efficiency.",
 
 
 
 skill_panel_title:
-"Control Panel Wiring",
+"Control Panel Design & Wiring",
 
 skill_panel_desc:
-"Panel assembly, wiring layout, and electrical documentation.",
-
-
+"Experienced in industrial control panel design, electrical component layout, wiring, installation, testing, and technical documentation.",
 
 
 
