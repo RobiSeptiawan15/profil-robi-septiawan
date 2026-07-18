@@ -100,13 +100,13 @@ skill_panel_desc:
 // =====================
 
 projects_subtitle:
-"FEATURED PROJECTS",
+"MY PROJECTS",
 
 projects_title:
-"Selected Engineering Projects",
+"Engineering Project Experience",
 
 projects_description:
-"Industrial automation and electrical engineering projects involving control systems, motor drives, panel development, and commissioning.",
+"Here are some projects I have worked on in electrical engineering and industrial automation, including control systems, electrical panels, PLC, inverter, wiring, testing, and commissioning.",
 
 
 
@@ -114,32 +114,32 @@ project1_category:
 "Industrial Automation",
 
 project1_title:
-"Renewal Panel System Hoist Control",
+"Industrial Hoist Control System Upgrade",
 
 project1_desc:
-"Renewal of an industrial hoist control panel for PT Toyota Manufacturing using Toshiba Inverter. The project included panel modification, electrical wiring, parameter configuration, testing, and commissioning.",
+"Upgraded an industrial hoist control panel for PT Toyota Manufacturing using Toshiba Inverter. The work included modifying the existing panel, improving electrical wiring, setting inverter parameters, system testing, and commissioning to achieve more stable and reliable operation.",
 
 
 
 project2_category:
-"Industrial Automation",
+"Machine Control System",
 
 project2_title:
 "Screw Machine Control Panel",
 
 project2_desc:
-"Development of an industrial screw machine control panel for PT Ciptapresisi Sarana Teknik using Mitsubishi PLC, Mitsubishi Inverter, and Weintek HMI. The project included programming, electrical wiring, testing, and commissioning.",
+"Developed a control system for a screw machine at PT Ciptapresisi Sarana Teknik using Mitsubishi PLC, Mitsubishi Inverter, and Weintek HMI. The project included PLC programming, panel wiring installation, HMI configuration, machine function testing, and system commissioning.",
 
 
 
 project3_category:
-"Industrial Drive System",
+"Motor Drive & Industrial Automation",
 
 project3_title:
 "Rotary Sludge Dryer Control Panel",
 
 project3_desc:
-"New control panel development for Rotary Sludge Dryer project by PT Ciptapresisi Sarana Teknik as subcontractor. The system included Schneider Inverter, electrical installation, testing, and commissioning.",
+"Developed a new control panel for a Rotary Sludge Dryer system at PT Ciptapresisi Sarana Teknik as a subcontractor project. The system uses Schneider Inverter for motor control, including electrical installation, drive configuration, testing, and commissioning.",
 
 
 
@@ -148,7 +148,7 @@ project_view:
 
 
 projects_button:
-"Explore All Projects →",
+"View All Projects →",
 
 // =====================
 // ABOUT HERO

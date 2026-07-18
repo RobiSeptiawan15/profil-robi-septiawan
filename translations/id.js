@@ -108,39 +108,50 @@ projects_title:
 
 projects_description:
 "Proyek otomasi industri dan engineering kelistrikan yang mencakup sistem kontrol, motor drive, pengembangan panel, dan commissioning.",
+// =====================
+// PROJECTS
+// =====================
 
+projects_subtitle:
+"PROYEK SAYA",
+
+projects_title:
+"Pengalaman Proyek Engineering",
+
+projects_description:
+"Berikut beberapa proyek yang pernah saya kerjakan di bidang electrical engineering dan industrial automation, mulai dari sistem kontrol, panel listrik, PLC, inverter, wiring, hingga proses testing dan commissioning.",
 
 
 project1_category:
 "Otomasi Industri",
 
 project1_title:
-"Renewal Panel System Hoist Control",
+"Pembaruan Sistem Kontrol Hoist Industri",
 
 project1_desc:
-"Perbaikan dan pembaruan panel kontrol hoist industri untuk PT Toyota Manufacturing menggunakan Toshiba Inverter. Proyek meliputi modifikasi panel, wiring kelistrikan, konfigurasi parameter, testing, dan commissioning.",
+"Melakukan pembaruan panel kontrol hoist industri untuk PT Toyota Manufacturing dengan menggunakan Toshiba Inverter. Pekerjaan mencakup modifikasi panel lama, perbaikan wiring kelistrikan, pengaturan parameter inverter, pengujian sistem, hingga commissioning agar sistem dapat bekerja lebih stabil dan optimal.",
 
 
 
 project2_category:
-"Otomasi Industri",
+"Sistem Kontrol Mesin",
 
 project2_title:
 "Panel Kontrol Mesin Screw",
 
 project2_desc:
-"Pengembangan panel kontrol mesin screw untuk PT Ciptapresisi Sarana Teknik menggunakan Mitsubishi PLC, Mitsubishi Inverter, dan Weintek HMI. Proyek meliputi programming, wiring kelistrikan, testing, dan commissioning.",
+"Membangun sistem kontrol untuk mesin screw di PT Ciptapresisi Sarana Teknik menggunakan Mitsubishi PLC, Mitsubishi Inverter, dan Weintek HMI. Proses pengerjaan mencakup pembuatan program PLC, instalasi wiring panel, konfigurasi HMI, pengujian fungsi mesin, dan commissioning sistem.",
 
 
 
 project3_category:
-"Sistem Motor Drive Industri",
+"Motor Drive & Otomasi Industri",
 
 project3_title:
 "Panel Kontrol Rotary Sludge Dryer",
 
 project3_desc:
-"Pengembangan panel kontrol baru untuk proyek Rotary Sludge Dryer oleh PT Ciptapresisi Sarana Teknik sebagai subcontractor. Sistem menggunakan Schneider Inverter, instalasi kelistrikan, testing, dan commissioning.",
+"Mengembangkan panel kontrol baru untuk sistem Rotary Sludge Dryer pada proyek PT Ciptapresisi Sarana Teknik sebagai subcontractor. Sistem menggunakan Schneider Inverter untuk mengontrol motor, dengan pekerjaan meliputi instalasi kelistrikan, konfigurasi drive, testing, dan commissioning.",
 
 
 

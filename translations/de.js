@@ -105,46 +105,46 @@ skill_panel_desc:
 // =====================
 
 projects_subtitle:
-"AUSGEWÄHLTE PROJEKTE",
+"MEINE PROJEKTE",
 
 projects_title:
-"Ausgewählte Engineering-Projekte",
+"Engineering-Projekterfahrung",
 
 projects_description:
-"Projekte im Bereich Industrieautomation und Elektrotechnik mit Steuerungssystemen, Motorantrieben, Schaltschrankentwicklung und Inbetriebnahme.",
+"Hier finden Sie einige Projekte, die ich im Bereich Elektrotechnik und industrielle Automatisierung umgesetzt habe, darunter Steuerungssysteme, Schaltschränke, SPS, Frequenzumrichter, Verdrahtung, Tests und Inbetriebnahme.",
 
 
 
 project1_category:
-"Industrieautomation",
+"Industrielle Automatisierung",
 
 project1_title:
-"Erneuerung des Hoist-Control-Systems",
+"Modernisierung der industriellen Hoist-Steuerung",
 
 project1_desc:
-"Erneuerung eines industriellen Hubsteuerungsschaltschranks für PT Toyota Manufacturing mit Toshiba Frequenzumrichter. Das Projekt umfasste Schaltschrankänderungen, elektrische Verdrahtung, Parametrierung, Tests und Inbetriebnahme.",
+"Modernisierung eines industriellen Hoist-Steuerungspanels für PT Toyota Manufacturing mit Toshiba Frequenzumrichter. Die Arbeiten umfassten die Anpassung des bestehenden Schaltschranks, elektrische Verdrahtung, Parametereinstellung des Frequenzumrichters, Systemtests und die Inbetriebnahme für einen stabileren und zuverlässigen Betrieb.",
 
 
 
 project2_category:
-"Industrieautomation",
+"Maschinensteuerung",
 
 project2_title:
-"Steuerungsschaltschrank für Schraubmaschine",
+"Steuerungsschrank für eine Screw-Maschine",
 
 project2_desc:
-"Entwicklung eines Steuerungsschaltschranks für eine industrielle Schraubmaschine bei PT Ciptapresisi Sarana Teknik mit Mitsubishi SPS, Mitsubishi Frequenzumrichter und Weintek HMI. Das Projekt umfasste Programmierung, Verdrahtung, Tests und Inbetriebnahme.",
+"Entwicklung eines Steuerungssystems für eine Screw-Maschine bei PT Ciptapresisi Sarana Teknik mit Mitsubishi SPS, Mitsubishi Frequenzumrichter und Weintek HMI. Das Projekt umfasste SPS-Programmierung, Schaltschrankverdrahtung, HMI-Konfiguration, Funktionstests der Maschine und Inbetriebnahme des Systems.",
 
 
 
 project3_category:
-"Industrielles Antriebssystem",
+"Motorantrieb & Industrielle Automatisierung",
 
 project3_title:
-"Steuerungsschaltschrank für Rotary Sludge Dryer",
+"Steuerungsschrank für Rotary Sludge Dryer",
 
 project3_desc:
-"Entwicklung eines neuen Steuerungsschaltschranks für das Rotary Sludge Dryer Projekt von PT Ciptapresisi Sarana Teknik als Subunternehmer. Das System umfasste Schneider Frequenzumrichter, elektrische Installation, Tests und Inbetriebnahme.",
+"Entwicklung eines neuen Steuerungsschranks für ein Rotary Sludge Dryer System bei PT Ciptapresisi Sarana Teknik als Subunternehmer-Projekt. Das System verwendet einen Schneider Frequenzumrichter zur Motorsteuerung. Die Arbeiten umfassten elektrische Installation, Antriebskonfiguration, Tests und Inbetriebnahme.",
 
 
 
