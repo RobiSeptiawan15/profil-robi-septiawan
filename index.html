@@ -27,12 +27,23 @@ Robi Septiawan | Electrical Engineer
 <link rel="stylesheet" href="css/about.css">
 <link rel="stylesheet" href="css/expertise.css">
 <link rel="stylesheet" href="css/portfolio.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/footer.css">
 <link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
 
 
 </head>
+
+
+
+<!-- LANGUAGE FILE -->
+
+<script src="translations/en.js"></script>
+<script src="translations/de.js"></script>
+<script src="translations/id.js"></script>
+
+<script src="js/language.js"></script>
+
 
 
 <body>
@@ -61,7 +72,6 @@ RS.
 <nav class="navbar">
 
 
-
 <a href="index.html" class="logo">
 
 RS.
@@ -71,30 +81,49 @@ RS.
 
 
 
+
 <ul class="nav-links">
 
 
 <li>
-<a href="index.html">
+<a href="index.html"
+data-i18n="nav_home">
+
 Home
+
 </a>
 </li>
 
 
+
+
 <li>
-<a href="about.html">
+<a href="about.html"
+data-i18n="nav_about">
+
 About
+
 </a>
 </li>
+
+
+
 
 
 <li>
-<a href="portfolio.html">
-Portofolio
+<a href="portfolio.html"
+data-i18n="nav_portfolio">
+
+Portfolio
+
 </a>
 </li>
+
+
 
 </ul>
+
+
 
 
 
@@ -103,15 +132,65 @@ Portofolio
 <div class="nav-right">
 
 
-<button class="language">
+<div class="language-switcher">
 
-🌐 EN
+
+<button class="language" type="button">
+
+🌐 
+<span id="current-lang">
+EN
+</span>
+
+<span class="arrow">
+⌄
+</span>
 
 </button>
 
 
 
-<a href="contact.html" class="contact-btn">
+
+
+<div class="language-dropdown">
+
+
+<button onclick="changeLanguage('en')">
+
+🇬🇧 English
+
+</button>
+
+
+
+<button onclick="changeLanguage('de')">
+
+🇩🇪 Deutsch
+
+</button>
+
+
+
+<button onclick="changeLanguage('id')">
+
+🇮🇩 Indonesia
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<a href="contact.html" class="contact-btn"
+data-i18n="nav_contact">
 
 Contact
 
@@ -132,412 +211,689 @@ Contact
 </div>
 
 
-
 </nav>
 
 
 </header>
 
-<!-- ===========================
-        HERO SECTION
-=========================== -->
+
+
+
+
+
+
+
+
+<!-- HERO -->
 
 <section class="hero">
 
-    <!-- Background -->
-    <div class="hero-bg">
-        <div class="grid-bg"></div>
-        <div class="aurora"></div>
-    </div>
 
-    <div class="hero-container">
+<div class="hero-bg">
 
-        <!-- Intro -->
-        <div class="intro">
+<div class="grid-bg"></div>
 
-            <img src="assets/images/profile.png"
-                 alt="Robi Septiawan"
-                 class="intro-avatar">
+<div class="aurora"></div>
 
-            <div>
 
-                <p class="hello">
-                    👋 Hello, I'm
-                </p>
+</div>
 
-                <h3>
-                    Robi Septiawan
-                </h3>
 
-            </div>
 
-        </div>
 
-        <!-- Badge -->
 
-        <p class="hero-tag">
+<div class="hero-container">
 
-            Electrical Engineer • Industrial Automation • Control Systems
 
-        </p>
 
-        <!-- Title -->
 
-        <h1>
 
-            Industrial Electrical & Automation 
+<div class="intro">
 
-            <span>Engineer</span>
 
-        </h1>
+<img src="assets/images/profile.png"
+alt="Robi Septiawan"
+class="intro-avatar">
 
-        <!-- Description -->
 
-        <p class="hero-description">
 
-            Specializing in industrial electrical systems, PLC automation, control panel wiring,
-            HMI configuration, motor drive systems,
-            and electrical troubleshooting.
-            Passionate about building reliable,
-            efficient, and safe industrial automation solutions.
+<div>
 
-        </p>
 
-        <!-- Button -->
+<p class="hello"
+data-i18n="hero_hello">
 
-        <div class="hero-buttons">
+👋 Hello, I'm
 
-            <a href="contact.html" class="btn-primary">
-
-                Available for Engineering Opportunities
-
-            </a>
-
-        </div>
-
-        <div class="scroll-indicator">
-
-            ↓ Scroll to Explore
-
-        </div>
-
-    </div>
-
-</section>
-<!-- SHORT ABOUT -->
-<section class="home-section">
-<h2>
-About Me
-</h2>
-<p>
-I am an Electrical Engineer specializing in industrial electrical systems, PLC programming, control panel
-wiring, and industrial automation. I am passionate about solving technical challenges and delivering
-reliable, efficient, and safe engineering solutions while continuously improving my technical expertise.
 </p>
-<a href="about.html" class="more-link">
-Read More →
+
+
+
+
+<h3>
+
+Robi Septiawan
+
+</h3>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<p class="hero-tag"
+data-i18n="hero_tag">
+
+
+Electrical Engineer • Industrial Automation • Control Systems
+
+
+</p>
+
+
+
+
+
+
+
+
+<h1 data-i18n="hero_title">
+
+
+Industrial Electrical & Automation Engineer
+
+
+</h1>
+
+
+
+
+
+
+
+
+<p class="hero-description"
+data-i18n="hero_description">
+
+
+Specializing in industrial electrical systems,
+PLC automation,
+control panel wiring,
+HMI configuration,
+motor drive systems,
+and electrical troubleshooting.
+
+
+</p>
+
+
+
+
+
+
+
+
+<div class="hero-buttons">
+
+
+<a href="contact.html"
+class="btn-primary"
+data-i18n="hero_button">
+
+
+Available for Engineering Opportunities
+
+
 </a>
+
+
+</div>
+
+
+
+
+
+
+<div class="scroll-indicator"
+data-i18n="hero_scroll">
+
+
+↓ Scroll to Explore
+
+
+</div>
+
+
+
+
+
+</div>
+
+
 </section>
 
 <!-- ===========================
      CORE SKILLS
 =========================== -->
 
+
 <section class="expertise">
 
-    <div class="expertise-container">
 
+<div class="expertise-container">
 
-        <div class="expertise-header">
 
-            <span class="expertise-subtitle">
-                CORE SKILLS
-            </span>
 
 
-            <h2 class="expertise-title">
-                Technical Expertise
-            </h2>
 
+<div class="expertise-header">
 
-            <p class="expertise-description">
 
-                Explore the engineering skills developed through
-                industrial projects and hands-on experience.
+<span class="expertise-subtitle"
+data-i18n="skills_subtitle">
 
-            </p>
+CORE SKILLS
 
+</span>
 
-        </div>
 
 
 
-        <div class="expertise-grid">
 
+<h2 class="expertise-title"
+data-i18n="skills_title">
 
+Technical Expertise
 
-            <!-- PLC PROGRAMMING -->
+</h2>
 
-            <a href="skills/plc-programming.html" class="expertise-card">
 
-                <img 
-                src="assets/images/plc.jpg"
-                class="skill-image"
-                >
 
-                <div class="skill-overlay"></div>
 
 
-                <div class="expertise-top">
+<p class="expertise-description"
+data-i18n="skills_description">
 
-                    <span class="card-arrow">
-                        ↗
-                    </span>
 
-                </div>
+Explore the engineering skills developed through
+industrial projects and hands-on experience.
 
 
-                <div class="expertise-content">
+</p>
 
-                    <h3>
-                        PLC Programming
-                    </h3>
 
 
-                    <p>
-                        Programmable Logic Controllers,
-                        automation programming, and industrial control systems.
-                    </p>
 
-                </div>
+</div>
 
 
-            </a>
 
 
 
 
 
-            <!-- ELECTRICAL CONTROL -->
 
-            <a href="skills/electrical-control-systems.html" class="expertise-card">
 
-                <img 
-                src="assets/images/electrical.jpg"
-                class="skill-image"
-                >
+<div class="expertise-grid">
 
-                <div class="skill-overlay"></div>
 
 
-                <div class="expertise-top">
 
-                    <span class="card-arrow">
-                        ↗
-                    </span>
 
-                </div>
 
 
-                <div class="expertise-content">
+<!-- PLC -->
 
-                    <h3>
-                        Electrical Control Systems
-                    </h3>
 
+<a href="skills/plc-programming.html"
+class="expertise-card">
 
-                    <p>
-                        Industrial control panels,
-                        protection systems, and electrical circuits.
-                    </p>
 
-                </div>
+<img 
+src="assets/images/plc.jpg"
+class="skill-image">
 
 
-            </a>
 
+<div class="skill-overlay"></div>
 
 
 
+<div class="expertise-top">
 
 
-            <!-- MOTOR DRIVES -->
+<span class="card-arrow">
 
-            <a href="skills/motor-drives.html" class="expertise-card">
+↗
 
-                <img 
-                src="assets/images/drive.jpg"
-                class="skill-image"
-                >
+</span>
 
-                <div class="skill-overlay"></div>
 
+</div>
 
-                <div class="expertise-top">
 
-                    <span class="card-arrow">
-                        ↗
-                    </span>
 
-                </div>
 
 
-                <div class="expertise-content">
+<div class="expertise-content">
 
-                    <h3>
-                        Motor Drives
-                    </h3>
 
 
-                    <p>
-                        Variable Frequency Drives,
-                        inverter setup, and motor commissioning.
-                    </p>
+<h3 data-i18n="skill_plc_title">
 
-                </div>
+PLC Programming
 
+</h3>
 
-            </a>
 
 
 
+<p data-i18n="skill_plc_desc">
 
+Programmable Logic Controllers,
+automation programming,
+and industrial control systems.
 
 
+</p>
 
-            <!-- TROUBLESHOOTING -->
 
-            <a href="skills/electrical-troubleshooting.html" class="expertise-card">
 
-                <img 
-                src="assets/images/troubleshooting.jpg"
-                class="skill-image"
-                >
 
-                <div class="skill-overlay"></div>
+</div>
 
 
-                <div class="expertise-top">
 
-                    <span class="card-arrow">
-                        ↗
-                    </span>
+</a>
 
-                </div>
 
 
-                <div class="expertise-content">
 
-                    <h3>
-                        Electrical Troubleshooting
-                    </h3>
 
 
-                    <p>
-                        Fault diagnosis,
-                        maintenance, and technical problem solving.
-                    </p>
 
-                </div>
 
 
-            </a>
 
+<!-- ELECTRICAL CONTROL -->
 
 
+<a href="skills/electrical-control-systems.html"
+class="expertise-card">
 
 
+<img 
+src="assets/images/electrical.jpg"
+class="skill-image">
 
 
-            <!-- INDUSTRIAL AUTOMATION -->
 
-            <a href="skills/industrial-automation.html" class="expertise-card">
+<div class="skill-overlay"></div>
 
-                <img 
-                src="assets/images/automation.jpg"
-                class="skill-image"
-                >
 
-                <div class="skill-overlay"></div>
 
 
-                <div class="expertise-top">
+<div class="expertise-top">
 
-                    <span class="card-arrow">
-                        ↗
-                    </span>
 
-                </div>
+<span class="card-arrow">
 
+↗
 
-                <div class="expertise-content">
+</span>
 
-                    <h3>
-                        Industrial Automation
-                    </h3>
 
+</div>
 
-                    <p>
-                        Automation integration,
-                        sensors, actuators, and control systems.
-                    </p>
 
-                </div>
 
 
-            </a>
 
+<div class="expertise-content">
 
 
+<h3 data-i18n="skill_electrical_title">
 
+Electrical Control Systems
 
+</h3>
 
 
-            <!-- CONTROL PANEL WIRING -->
 
-            <a href="skills/control-panel-wiring.html" class="expertise-card">
 
-                <img 
-                src="assets/images/panel.jpg"
-                class="skill-image"
-                >
+<p data-i18n="skill_electrical_desc">
 
-                <div class="skill-overlay"></div>
 
+Industrial control panels,
+protection systems,
+and electrical circuits.
 
-                <div class="expertise-top">
 
-                    <span class="card-arrow">
-                        ↗
-                    </span>
+</p>
 
-                </div>
 
 
-                <div class="expertise-content">
 
-                    <h3>
-                        Control Panel Wiring
-                    </h3>
+</div>
 
 
-                    <p>
-                        Panel assembly,
-                        wiring layout, and electrical documentation.
-                    </p>
 
-                </div>
+</a>
 
 
-            </a>
 
 
 
 
-        </div>
 
 
-    </div>
+
+<!-- MOTOR DRIVE -->
+
+
+<a href="skills/motor-drives.html"
+class="expertise-card">
+
+
+<img 
+src="assets/images/drive.jpg"
+class="skill-image">
+
+
+
+<div class="skill-overlay"></div>
+
+
+
+<div class="expertise-top">
+
+
+<span class="card-arrow">
+
+↗
+
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="expertise-content">
+
+
+
+<h3 data-i18n="skill_drive_title">
+
+Motor Drives
+
+</h3>
+
+
+
+
+
+<p data-i18n="skill_drive_desc">
+
+
+Variable Frequency Drives,
+inverter setup,
+and motor commissioning.
+
+
+</p>
+
+
+
+</div>
+
+
+
+</a>
+
+
+
+
+
+
+
+
+
+<!-- TROUBLESHOOTING -->
+
+
+<a href="skills/electrical-troubleshooting.html"
+class="expertise-card">
+
+
+<img 
+src="assets/images/troubleshooting.jpg"
+class="skill-image">
+
+
+
+<div class="skill-overlay"></div>
+
+
+
+<div class="expertise-top">
+
+
+<span class="card-arrow">
+
+↗
+
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="expertise-content">
+
+
+
+<h3 data-i18n="skill_troubleshoot_title">
+
+Electrical Troubleshooting
+
+</h3>
+
+
+
+
+
+<p data-i18n="skill_troubleshoot_desc">
+
+
+Fault diagnosis,
+maintenance,
+and technical problem solving.
+
+
+</p>
+
+
+
+</div>
+
+
+
+</a>
+
+
+
+
+
+
+
+
+
+<!-- INDUSTRIAL AUTOMATION -->
+
+
+<a href="skills/industrial-automation.html"
+class="expertise-card">
+
+
+<img 
+src="assets/images/automation.jpg"
+class="skill-image">
+
+
+
+<div class="skill-overlay"></div>
+
+
+
+<div class="expertise-top">
+
+
+<span class="card-arrow">
+
+↗
+
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="expertise-content">
+
+
+
+<h3 data-i18n="skill_automation_title">
+
+Industrial Automation
+
+</h3>
+
+
+
+
+
+<p data-i18n="skill_automation_desc">
+
+
+Automation integration,
+sensors,
+actuators,
+and control systems.
+
+
+</p>
+
+
+
+
+</div>
+
+
+
+</a>
+
+
+
+
+
+
+
+
+
+<!-- CONTROL PANEL -->
+
+
+<a href="skills/control-panel-wiring.html"
+class="expertise-card">
+
+
+<img 
+src="assets/images/panel.jpg"
+class="skill-image">
+
+
+
+<div class="skill-overlay"></div>
+
+
+
+<div class="expertise-top">
+
+
+<span class="card-arrow">
+
+↗
+
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="expertise-content">
+
+
+
+<h3 data-i18n="skill_panel_title">
+
+Control Panel Wiring
+
+</h3>
+
+
+
+
+
+<p data-i18n="skill_panel_desc">
+
+
+Panel assembly,
+wiring layout,
+and electrical documentation.
+
+
+</p>
+
+
+
+
+</div>
+
+
+
+</a>
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
 
 
 </section>
@@ -546,188 +902,556 @@ Read More →
      FEATURED PROJECTS
 =========================== -->
 
+
 <section class="projects">
 
-    <div class="projects-container">
 
-        <div class="projects-header">
+<div class="projects-container">
 
-            <span class="projects-subtitle">
-                FEATURED PROJECTS
-            </span>
 
-            <h2 class="projects-title">
-                Selected Engineering Projects
-            </h2>
 
-            <p class="projects-description">
-                A selection of engineering projects that demonstrate my technical expertise,
-                problem-solving abilities, and hands-on industrial experience.
-            </p>
 
-        </div>
 
 
-        <!-- =======================
-             PROJECT 1
-        ======================== -->
+<div class="projects-header">
 
-        <div class="project-item">
 
-            <div class="project-image">
+<span class="projects-subtitle"
+data-i18n="projects_subtitle">
 
-                <img
-                    src="assets/projects/plc-control.jpg"
-                    alt="PLC Control System">
+FEATURED PROJECTS
 
-            </div>
+</span>
 
-            <div class="project-content">
 
-                <span class="project-number">
-                    01
-                </span>
 
-                <h3>
-                    PLC Control System
-                </h3>
 
-                <p>
-                    PLC programming, testing, troubleshooting, and commissioning
-                    for industrial automation systems.
-                </p>
 
-                <div class="project-tags">
 
-                    <span>PLC</span>
-                    <span>Omron</span>
-                    <span>Automation</span>
+<h2 class="projects-title"
+data-i18n="projects_title">
 
-                </div>
+Selected Engineering Projects
 
-                <a href="projects/plc-control.html" class="project-link">
+</h2>
 
-                    View Project →
 
-                </a>
 
-            </div>
 
-        </div>
 
 
 
-        <!-- =======================
-             PROJECT 2
-        ======================== -->
+<p class="projects-description"
+data-i18n="projects_description">
 
-        <div class="project-item reverse">
 
-            <div class="project-image">
+Industrial automation and electrical engineering
+projects involving control systems,
+motor drives,
+panel development,
+and commissioning.
 
-                <img
-                    src="assets/projects/control-panel.jpg"
-                    alt="Electrical Control Panel">
 
-            </div>
+</p>
 
-            <div class="project-content">
 
-                <span class="project-number">
-                    02
-                </span>
 
-                <h3>
-                    Electrical Control Panel
-                </h3>
 
-                <p>
-                    Assembly, wiring, installation, and testing of industrial
-                    electrical control panels.
-                </p>
+</div>
 
-                <div class="project-tags">
 
-                    <span>Panel</span>
-                    <span>Relay</span>
-                    <span>Electrical</span>
 
-                </div>
 
-                <a href="projects/control-panel.html" class="project-link">
 
-                    View Project →
 
-                </a>
 
-            </div>
 
-        </div>
 
+<!-- PROJECT 01 -->
 
 
-        <!-- =======================
-             PROJECT 3
-        ======================== -->
+<div class="project-item">
 
-        <div class="project-item">
 
-            <div class="project-image">
 
-                <img
-                    src="assets/projects/motor-drive.jpg"
-                    alt="Motor Drive">
 
-            </div>
 
-            <div class="project-content">
+<div class="project-image">
 
-                <span class="project-number">
-                    03
-                </span>
 
-                <h3>
-                    Motor Drive Commissioning
-                </h3>
+<img
+src="assets/projects/hoist-control.jpg"
+alt="Renewal Hoist Control System">
 
-                <p>
-                    Inverter parameter setup, commissioning,
-                    testing, and troubleshooting of AC motor drives.
-                </p>
 
-                <div class="project-tags">
+</div>
 
-                    <span>ABB</span>
-                    <span>VFD</span>
-                    <span>Commissioning</span>
 
-                </div>
 
-                <a href="projects/motor-drive.html" class="project-link">
 
-                    View Project →
 
-                </a>
 
-            </div>
+<div class="project-content">
 
-        </div>
 
 
+<span class="project-category"
+data-i18n="project1_category">
 
-        <!-- BUTTON -->
 
-        <div class="projects-button">
+Industrial Automation
 
-            <a href="portfolio.html">
 
-                Explore All Projects →
+</span>
 
-            </a>
 
-        </div>
 
 
-    </div>
+
+
+
+<h3 data-i18n="project1_title">
+
+
+Renewal Panel System Hoist Control
+
+
+</h3>
+
+
+
+
+
+
+
+<p data-i18n="project1_desc">
+
+
+Renewal of an industrial hoist control panel
+for PT Toyota Manufacturing using Toshiba Inverter.
+The project included panel modification,
+electrical wiring,
+parameter configuration,
+testing,
+and commissioning.
+
+
+</p>
+
+
+
+
+
+
+
+<div class="project-tags">
+
+
+<span>
+
+Toshiba Inverter
+
+</span>
+
+
+
+<span>
+
+Electrical Wiring
+
+</span>
+
+
+
+<span>
+
+Commissioning
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+<a href="projects/renewal-hoist-control.html"
+class="project-link"
+data-i18n="project_view">
+
+
+View Case Study →
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PROJECT 02 -->
+
+
+<div class="project-item reverse">
+
+
+
+
+
+
+<div class="project-image">
+
+
+<img
+src="assets/projects/screw-machine.jpg"
+alt="Screw Machine Control Panel">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="project-content">
+
+
+
+
+
+<span class="project-category"
+data-i18n="project2_category">
+
+
+Industrial Automation
+
+
+</span>
+
+
+
+
+
+
+
+<h3 data-i18n="project2_title">
+
+
+Screw Machine Control Panel
+
+
+</h3>
+
+
+
+
+
+
+
+<p data-i18n="project2_desc">
+
+
+Development of an industrial screw machine
+control panel for PT Ciptapresisi Sarana Teknik
+using Mitsubishi PLC,
+Mitsubishi Inverter,
+and Weintek HMI.
+The project included programming,
+electrical wiring,
+testing,
+and commissioning.
+
+
+</p>
+
+
+
+
+
+
+
+
+<div class="project-tags">
+
+
+<span>
+
+Mitsubishi PLC
+
+</span>
+
+
+
+<span>
+
+Mitsubishi Inverter
+
+</span>
+
+
+
+<span>
+
+Weintek HMI
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+<a href="projects/screw-machine-control.html"
+class="project-link"
+data-i18n="project_view">
+
+
+View Case Study →
+
+</a>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PROJECT 03 -->
+
+
+
+<div class="project-item">
+
+
+
+
+
+
+<div class="project-image">
+
+
+<img
+src="assets/projects/sludge-dryer.jpg"
+alt="Rotary Sludge Dryer Control Panel">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="project-content">
+
+
+
+
+
+
+<span class="project-category"
+data-i18n="project3_category">
+
+
+Industrial Drive System
+
+
+</span>
+
+
+
+
+
+
+
+
+<h3 data-i18n="project3_title">
+
+
+Rotary Sludge Dryer Control Panel
+
+
+</h3>
+
+
+
+
+
+
+
+
+<p data-i18n="project3_desc">
+
+
+New control panel development for
+Rotary Sludge Dryer project by PT Ciptapresisi Sarana Teknik
+as subcontractor.
+The system included Schneider Inverter,
+electrical installation,
+testing,
+and commissioning.
+
+
+</p>
+
+
+
+
+
+
+
+<div class="project-tags">
+
+
+<span>
+
+Schneider Inverter
+
+</span>
+
+
+
+<span>
+
+Electrical Panel
+
+</span>
+
+
+
+<span>
+
+Commissioning
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+<a href="projects/rotary-sludge-dryer.html"
+class="project-link"
+data-i18n="project_view">
+
+
+View Case Study →
+
+</a>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- BUTTON -->
+
+
+<div class="projects-button">
+
+
+<a href="portfolio.html"
+data-i18n="projects_button">
+
+
+Explore All Projects →
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
 
 </section>
+
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+
+<footer class="footer">
+
+
+<p data-i18n="footer_text">
+
+
+© 2026 Robi Septiawan.
+All Rights Reserved.
+
+
+</p>
+
+
+
+</footer>

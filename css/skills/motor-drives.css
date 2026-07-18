@@ -7,8 +7,7 @@
    CONTAINER
 =========================== */
 
-
-.drive-container{
+.plc-container{
 
     width:90%;
 
@@ -19,13 +18,11 @@
 }
 
 
-
 /* ===========================
    HERO
 =========================== */
 
-
-.drive-hero{
+.plc-hero{
 
     min-height:75vh;
 
@@ -40,9 +37,8 @@
     padding:160px 20px 100px;
 
     background:
-
     radial-gradient(circle at top right,
-    rgba(37,99,235,.25),
+    rgba(37,99,235,.22),
     transparent 40%),
 
     linear-gradient(
@@ -51,13 +47,39 @@
     #111827
     );
 
-    color:white;
+    color:#fff;
+
+    overflow:hidden;
+
+    position:relative;
 
 }
 
 
+.plc-hero::before{
 
-.drive-tag{
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(96,165,250,.08);
+
+    top:-120px;
+
+    right:-120px;
+
+    filter:blur(30px);
+
+}
+
+
+.plc-tag{
 
     display:inline-block;
 
@@ -74,8 +96,7 @@
 }
 
 
-
-.drive-hero h1{
+.plc-hero h1{
 
     font-size:56px;
 
@@ -85,42 +106,38 @@
 
     margin:auto;
 
+    font-weight:800;
+
 }
 
 
-
-.drive-hero h1 span{
+.plc-hero h1 span{
 
     color:#60A5FA;
 
 }
 
 
+.plc-hero p{
 
-.drive-hero p{
-
-    max-width:750px;
+    max-width:760px;
 
     margin:30px auto 0;
 
     font-size:18px;
 
-    line-height:1.8;
+    line-height:1.9;
 
     color:#CBD5E1;
 
 }
 
 
-
-
-
 /* ===========================
    SECTION
 =========================== */
 
-
-.drive-section{
+.plc-section{
 
     padding:100px 20px;
 
@@ -129,13 +146,11 @@
 }
 
 
-
 .section-title{
 
-    margin-bottom:50px;
+    margin-bottom:55px;
 
 }
-
 
 
 .section-title span{
@@ -146,10 +161,9 @@
 
     letter-spacing:3px;
 
-    font-weight:600;
+    font-weight:700;
 
 }
-
 
 
 .section-title h2{
@@ -160,71 +174,67 @@
 
     color:#08111F;
 
+    line-height:1.3;
+
 }
-
-
-
-
-
-
 
 /* ===========================
    CARD
 =========================== */
 
-
-.drive-card,
-.drive-box,
+.plc-card,
+.plc-box,
 .project-box{
 
-
-    background:white;
+    background:#fff;
 
     padding:35px;
 
-    border-radius:25px;
+    border-radius:24px;
 
     border:1px solid #E5E7EB;
 
     box-shadow:
+    0 15px 40px rgba(15,23,42,.06);
 
-    0 20px 40px rgba(0,0,0,.06);
-
-
-    transition:.3s;
-
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
 
 }
 
 
-
-.drive-card:hover,
-.drive-box:hover,
+.plc-card:hover,
+.plc-box:hover,
 .project-box:hover{
-
 
     transform:translateY(-8px);
 
     border-color:#2563EB;
 
+    box-shadow:
+    0 25px 60px rgba(37,99,235,.12);
 
 }
 
 
-
-.drive-card p{
-
+.plc-card p{
 
     color:#4B5563;
 
-    line-height:1.8;
+    line-height:1.9;
 
     margin-bottom:20px;
-
 
 }
 
 
+.plc-card p:last-child{
+
+    margin-bottom:0;
+
+}
 
 
 
@@ -232,9 +242,7 @@
    GRID
 =========================== */
 
-
-.drive-grid{
-
+.plc-grid{
 
     display:grid;
 
@@ -242,48 +250,142 @@
 
     gap:30px;
 
+}
+
+
+.plc-box{
+
+    position:relative;
+
+    overflow:hidden;
 
 }
 
 
+.plc-box::before{
 
-.drive-box h3{
+    content:"";
 
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+    background:#2563EB;
+
+    transform:scaleY(0);
+
+    transform-origin:top;
+
+    transition:.35s;
+
+}
+
+
+.plc-box:hover::before{
+
+    transform:scaleY(1);
+
+}
+
+
+.plc-box h3{
 
     font-size:24px;
 
-    margin-bottom:15px;
+    margin-bottom:18px;
 
     color:#111827;
 
+    font-weight:700;
 
 }
 
 
-
-.drive-box p{
-
+.plc-box p{
 
     color:#6B7280;
 
-    line-height:1.7;
-
+    line-height:1.8;
 
 }
 
 
 
+/* ===========================
+   PROJECT
+=========================== */
+
+.project-box h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+    color:#08111F;
+
+}
 
 
+.project-box p{
 
+    color:#4B5563;
+
+    line-height:1.9;
+
+}
+
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+
+.tags span{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.tags span:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
 
 /* ===========================
    WORKFLOW
 =========================== */
 
-
 .workflow{
-
 
     display:grid;
 
@@ -291,19 +393,20 @@
 
     gap:20px;
 
-
 }
-
 
 
 .workflow div{
 
+    background:linear-gradient(
+    135deg,
+    #08111F,
+    #111827
+    );
 
-    background:#08111F;
+    color:#fff;
 
-    color:white;
-
-    padding:30px 20px;
+    padding:35px 20px;
 
     border-radius:20px;
 
@@ -313,83 +416,24 @@
 
     line-height:1.8;
 
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+
+    box-shadow:
+    0 12px 30px rgba(15,23,42,.12);
 
 }
 
 
+.workflow div:hover{
 
+    transform:translateY(-8px);
 
-
-
-
-
-/* ===========================
-   PROJECT
-=========================== */
-
-
-.project-box h3{
-
-
-    font-size:30px;
-
-    margin-bottom:20px;
-
+    box-shadow:
+    0 20px 45px rgba(37,99,235,.18);
 
 }
-
-
-
-.project-box p{
-
-
-    color:#4B5563;
-
-    line-height:1.8;
-
-
-}
-
-
-
-.tags{
-
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:12px;
-
-    margin-top:25px;
-
-
-}
-
-
-
-.tags span{
-
-
-    background:#EFF6FF;
-
-    color:#2563EB;
-
-    padding:10px 20px;
-
-    border-radius:50px;
-
-    font-weight:600;
-
-    font-size:14px;
-
-
-}
-
-
-
-
-
 
 
 
@@ -397,57 +441,91 @@
    CTA
 =========================== */
 
-
-.drive-cta{
-
+.plc-cta{
 
     padding:100px 20px;
 
     text-align:center;
 
-    background:#08111F;
+    background:
+    linear-gradient(
+    135deg,
+    #08111F,
+    #111827
+    );
 
     color:white;
-
 
 }
 
 
-
-.drive-cta h2{
-
+.plc-cta h2{
 
     font-size:40px;
 
-    margin-bottom:30px;
+    margin-bottom:20px;
 
+    font-weight:700;
 
 }
 
 
+.plc-cta p{
 
-.drive-cta a{
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
 
 
-    display:inline-block;
+.plc-cta a{
 
-    padding:15px 35px;
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 38px;
 
     background:#2563EB;
 
-    border-radius:50px;
+    color:#fff;
 
-    color:white;
+    border-radius:50px;
 
     font-weight:600;
 
+    text-decoration:none;
+
+    transition:
+    background .3s ease,
+    transform .3s ease,
+    box-shadow .3s ease;
+
+    box-shadow:
+    0 12px 25px rgba(37,99,235,.25);
 
 }
 
 
+.plc-cta a:hover{
 
+    background:#1D4ED8;
 
+    transform:translateY(-3px);
 
+    box-shadow:
+    0 18px 35px rgba(37,99,235,.35);
+
+}
 
 
 
@@ -455,9 +533,7 @@
    FOOTER
 =========================== */
 
-
 footer{
-
 
     padding:30px;
 
@@ -465,75 +541,7 @@ footer{
 
     background:#050B14;
 
-    color:white;
-
-
-}
-
-
-
-
-
-
-
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-
-
-@media(max-width:900px){
-
-
-.drive-hero h1{
-
-    font-size:42px;
-
-}
-
-
-
-.drive-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.workflow{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-
-}
-
-
-
-
-
-@media(max-width:600px){
-
-
-.drive-hero{
-
-    padding-top:130px;
-
-}
-
-
-
-.drive-hero h1{
-
-    font-size:34px;
-
-}
-
-
-
-.drive-hero p{
+    color:#94A3B8;
 
     font-size:15px;
 
@@ -541,13 +549,87 @@ footer{
 
 
 
-.section-title h2{
+/* ===========================
+   RESPONSIVE
+=========================== */
 
-    font-size:32px;
+@media(max-width:992px){
+
+.plc-hero h1{
+
+    font-size:46px;
+
+}
+
+.plc-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.workflow{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
 
 }
 
 
+@media(max-width:768px){
+
+.plc-section{
+
+    padding:80px 20px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.project-box h3{
+
+    font-size:26px;
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.plc-hero{
+
+    min-height:65vh;
+
+    padding:130px 20px 80px;
+
+}
+
+.plc-hero h1{
+
+    font-size:34px;
+
+}
+
+.plc-hero p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.plc-card,
+.plc-box,
+.project-box{
+
+    padding:25px;
+
+}
 
 .workflow{
 
@@ -555,31 +637,50 @@ footer{
 
 }
 
+.workflow div{
 
-
-.drive-card,
-.drive-box,
-.project-box{
-
-
-    padding:25px;
-
+    padding:28px 20px;
 
 }
 
+.plc-cta{
+
+    padding:80px 20px;
 
 }
 
-.drive-hero{
-    display:flex !important;
+.plc-cta h2{
+
+    font-size:30px;
+
 }
 
-.drive-container{
-    width:90% !important;
-    max-width:1200px !important;
+.plc-cta p{
+
+    font-size:15px;
+
 }
 
-.drive-hero h1{
-    font-size:56px !important;
-    color:white !important;
+.plc-cta a{
+
+    width:100%;
+
+    max-width:280px;
+
+}
+
+.tags{
+
+    gap:10px;
+
+}
+
+.tags span{
+
+    font-size:13px;
+
+    padding:8px 16px;
+
+}
+
 }
