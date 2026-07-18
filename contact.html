@@ -7,39 +7,23 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <title>
 Contact | Robi Septiawan
 </title>
-
-
-<!-- Google Font -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-
-
-<!-- CSS -->
-
 <link rel="stylesheet" href="css/style.css">
-
 <link rel="stylesheet" href="css/navbar.css">
-
 <link rel="stylesheet" href="css/contact.css">
-
 <link rel="stylesheet" href="css/footer.css">
-
 <link rel="stylesheet" href="css/responsive.css">
 
-
 </head>
-
-<script src="js/contact.js"></script>
 
 <body>
 
@@ -49,14 +33,13 @@ Contact | Robi Septiawan
 
 <div class="loading">
 
-    <div class="loader-logo">
+<div class="loader-logo">
 
-        RS.
-
-    </div>
+RS.
 
 </div>
 
+</div>
 
 
 
@@ -65,12 +48,9 @@ Contact | Robi Septiawan
         NAVBAR
 =========================== -->
 
-
 <header>
 
-
 <nav class="navbar">
-
 
 <a href="index.html" class="logo">
 
@@ -78,15 +58,12 @@ RS.
 
 </a>
 
-
-
-
 <ul class="nav-links">
-
 
 <li>
 
-<a href="index.html">
+<a href="index.html"
+data-i18n="nav_home">
 
 Home
 
@@ -94,11 +71,10 @@ Home
 
 </li>
 
-
-
 <li>
 
-<a href="about.html">
+<a href="about.html"
+data-i18n="nav_about">
 
 About
 
@@ -106,11 +82,10 @@ About
 
 </li>
 
-
-
 <li>
 
-<a href="portfolio.html">
+<a href="portfolio.html"
+data-i18n="nav_portfolio">
 
 Portfolio
 
@@ -118,34 +93,63 @@ Portfolio
 
 </li>
 
-
 </ul>
-
-
-
 
 <div class="nav-right">
 
+<div class="language-switcher">
 
-<button class="language">
+<button class="language" type="button">
 
-🌐 EN
+🌐
+
+<span id="current-lang">
+
+EN
+
+</span>
+
+<span class="arrow">
+
+⌄
+
+</span>
 
 </button>
 
+<div class="language-dropdown">
 
+<button onclick="changeLanguage('en')">
 
-<a href="contact.html" class="contact-btn active">
+🇬🇧 English
+
+</button>
+
+<button onclick="changeLanguage('de')">
+
+🇩🇪 Deutsch
+
+</button>
+
+<button onclick="changeLanguage('id')">
+
+🇮🇩 Indonesia
+
+</button>
+
+</div>
+
+</div>
+
+<a href="contact.html"
+class="contact-btn active"
+data-i18n="nav_contact">
 
 Contact
 
 </a>
 
-
 </div>
-
-
-
 
 <div class="menu-toggle">
 
@@ -153,12 +157,10 @@ Contact
 
 </div>
 
-
-
 </nav>
 
-
 </header>
+
 
 
 
@@ -169,23 +171,18 @@ Contact
         CONTACT HERO
 =========================== -->
 
-
 <section class="contact-hero">
-
 
 <div class="contact-container">
 
-
-
-<span class="contact-tag">
+<span class="contact-tag"
+data-i18n="contact_tag">
 
 CONTACT ME
 
 </span>
 
-
-
-<h1>
+<h1 data-i18n="contact_title">
 
 Say Hello 👋
 
@@ -195,9 +192,8 @@ Let's Build Something Great Together
 
 </h1>
 
-
-
-<p>
+<p
+data-i18n="contact_description">
 
 I'm always open to discussing engineering opportunities,
 industrial automation projects,
@@ -206,53 +202,35 @@ and new professional connections.
 
 </p>
 
-
-
 </div>
 
-
 </section>
-
-
-
-
-
-
-
-
 
 <!-- ===========================
         CONTACT CONTENT
 =========================== -->
 
-
 <section class="contact-section">
-
 
 <div class="contact-grid">
 
 
 
 
-
 <!-- CONTACT INFO -->
-
 
 <div class="contact-card">
 
-
-<h2>
+<h2 data-i18n="contact_info_title">
 
 Get In Touch
 
 </h2>
 
-
-
-<p class="contact-desc">
+<p class="contact-desc"
+data-i18n="contact_info_description">
 
 Feel free to contact me through the information below.
-
 I will be happy to discuss opportunities and collaborations.
 
 </p>
@@ -263,22 +241,19 @@ I will be happy to discuss opportunities and collaborations.
 
 <div class="contact-item">
 
-
 <div class="contact-icon">
 
 📧
 
 </div>
 
-
 <div>
 
-<h3>
+<h3 data-i18n="contact_email">
 
 Email
 
 </h3>
-
 
 <a href="mailto:robiseptiawan15@gmail.com">
 
@@ -286,19 +261,15 @@ robiseptiawan15@gmail.com
 
 </a>
 
-
 <a href="mailto:robiseptiawan49@gmail.com">
 
 robiseptiawan49@gmail.com
 
 </a>
 
-
 </div>
 
-
 </div>
-
 
 
 
@@ -306,7 +277,6 @@ robiseptiawan49@gmail.com
 
 
 <div class="contact-item">
-
 
 <div class="contact-icon">
 
@@ -314,15 +284,13 @@ robiseptiawan49@gmail.com
 
 </div>
 
-
 <div>
 
-<h3>
+<h3 data-i18n="contact_phone">
 
 Phone
 
 </h3>
-
 
 <a href="tel:082125754987">
 
@@ -330,9 +298,7 @@ Phone
 
 </a>
 
-
 </div>
-
 
 </div>
 
@@ -344,36 +310,29 @@ Phone
 
 <div class="contact-item">
 
-
 <div class="contact-icon">
 
 📍
 
 </div>
 
-
 <div>
 
-<h3>
+<h3 data-i18n="contact_location">
 
 Location
 
 </h3>
 
-
-<p>
+<p data-i18n="contact_location_value">
 
 Jakarta, Indonesia
 
 </p>
 
-
 </div>
 
-
 </div>
-
-
 
 </div>
 
@@ -383,15 +342,11 @@ Jakarta, Indonesia
 
 
 
-
-
-<!-- LIVE INFO -->
-
+<!-- LIVE INFORMATION -->
 
 <div class="live-card">
 
-
-<h2>
+<h2 data-i18n="live_title">
 
 Live Information
 
@@ -403,14 +358,11 @@ Live Information
 
 <div class="live-box">
 
-
-<span>
+<span data-i18n="live_time">
 
 🕒 Local Time
 
 </span>
-
-
 
 <h3 id="wib-time">
 
@@ -418,17 +370,13 @@ Loading...
 
 </h3>
 
-
-
-<p>
+<p data-i18n="live_timezone">
 
 Jakarta, Indonesia (WIB UTC+7)
 
 </p>
 
-
 </div>
-
 
 
 
@@ -438,14 +386,11 @@ Jakarta, Indonesia (WIB UTC+7)
 
 <div class="live-box">
 
-
-<span>
+<span data-i18n="live_weather">
 
 🌤 Weather
 
 </span>
-
-
 
 <h3 id="weather">
 
@@ -453,28 +398,18 @@ Loading...
 
 </h3>
 
-
-
-<p id="weather-detail">
+<p id="weather-detail"
+data-i18n="live_weather_loading">
 
 Checking weather condition...
 
 </p>
 
+</div>
 
 </div>
 
-
-
-
-
 </div>
-
-
-
-
-</div>
-
 
 </section>
 
@@ -482,18 +417,15 @@ Checking weather condition...
         CTA
 =========================== -->
 
-
 <section class="contact-cta">
 
-
-<h2>
+<h2 data-i18n="cta_contact_title">
 
 Ready to Work Together?
 
 </h2>
 
-
-<p>
+<p data-i18n="cta_contact_description">
 
 Let's connect and discuss how we can create reliable engineering solutions.
 
@@ -501,74 +433,83 @@ Let's connect and discuss how we can create reliable engineering solutions.
 
 
 
-<div class="email-selector">
 
+
+<div class="email-selector">
 
 <select id="email-choice">
 
-
-<option value="">
+<option value=""
+data-i18n="email_select">
 
 Select Contact Destination
 
 </option>
 
-
-
-<option value="robiseptiawan15@gmail.com">
+<option value="robiseptiawan15@gmail.com"
+data-i18n="email_german">
 
 🇩🇪 German / International Communication
 
 </option>
 
-
-
-<option value="robiseptiawan49@gmail.com">
+<option value="robiseptiawan49@gmail.com"
+data-i18n="email_indonesia">
 
 🇮🇩 Indonesia Communication
 
 </option>
-
-
 
 </select>
 
 
 
 
-<button onclick="sendEmail()" class="btn-primary">
+
+<button
+onclick="sendEmail()"
+class="btn-primary"
+data-i18n="send_email">
 
 Send Email
 
 </button>
-
-
 
 </div>
 
 
 
 
-<a href="assets/cv/Robi-Septiawan-CV.pdf" class="btn-secondary cv-contact">
+
+<a
+href="assets/cv/Robi-Septiawan-CV.pdf"
+class="btn-secondary cv-contact"
+data-i18n="download_cv">
 
 Download CV
 
 </a>
 
-
-
 </section>
+
+
+
+
+
+
+
+<!-- ===========================
+        FOOTER
+=========================== -->
 
 <footer class="footer">
 
-
-<p>
+<p data-i18n="footer_text">
 
 © 2026 Robi Septiawan.
 All Rights Reserved.
 
 </p>
-
 
 </footer>
 
@@ -576,11 +517,18 @@ All Rights Reserved.
 
 
 
+<!-- LANGUAGE FILE -->
+
+<script src="translations/en.js"></script>
+<script src="translations/de.js"></script>
+<script src="translations/id.js"></script>
+
+<script src="js/language.js"></script>
+
+<!-- CONTACT -->
 
 <script src="js/contact.js"></script>
 
-
 </body>
-
 
 </html>

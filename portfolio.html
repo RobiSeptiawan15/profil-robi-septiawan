@@ -7,41 +7,33 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 <title>
 Portfolio | Robi Septiawan
 </title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
-
 <link rel="stylesheet" href="css/navbar.css">
-
 <link rel="stylesheet" href="css/portfolio.css">
-
 <link rel="stylesheet" href="css/footer.css">
-
 <link rel="stylesheet" href="css/responsive.css">
-
 
 </head>
 
-
-
 <body>
-
-
-
 
 <!-- ===========================
         NAVBAR
 =========================== -->
 
-
 <header>
 
 <nav class="navbar">
-
 
 <a href="index.html" class="logo">
 
@@ -49,15 +41,12 @@ RS.
 
 </a>
 
-
-
-
 <ul class="nav-links">
-
 
 <li>
 
-<a href="index.html">
+<a href="index.html"
+data-i18n="nav_home">
 
 Home
 
@@ -65,12 +54,10 @@ Home
 
 </li>
 
-
-
-
 <li>
 
-<a href="about.html">
+<a href="about.html"
+data-i18n="nav_about">
 
 About
 
@@ -78,12 +65,11 @@ About
 
 </li>
 
-
-
-
 <li>
 
-<a href="portfolio.html" class="active">
+<a href="portfolio.html"
+class="active"
+data-i18n="nav_portfolio">
 
 Portfolio
 
@@ -91,38 +77,63 @@ Portfolio
 
 </li>
 
-
 </ul>
-
-
-
-
-
 
 <div class="nav-right">
 
+<div class="language-switcher">
 
-<button class="language">
+<button class="language" type="button">
 
-🌐 EN
+🌐
+
+<span id="current-lang">
+
+EN
+
+</span>
+
+<span class="arrow">
+
+⌄
+
+</span>
 
 </button>
 
+<div class="language-dropdown">
 
+<button onclick="changeLanguage('en')">
 
-<a href="contact.html" class="contact-btn">
+🇬🇧 English
+
+</button>
+
+<button onclick="changeLanguage('de')">
+
+🇩🇪 Deutsch
+
+</button>
+
+<button onclick="changeLanguage('id')">
+
+🇮🇩 Indonesia
+
+</button>
+
+</div>
+
+</div>
+
+<a href="contact.html"
+class="contact-btn"
+data-i18n="nav_contact">
 
 Contact
 
 </a>
 
-
 </div>
-
-
-
-
-
 
 <div class="menu-toggle">
 
@@ -130,66 +141,45 @@ Contact
 
 </div>
 
-
 </nav>
 
-
 </header>
-
-
-
-
-
-
-
-
 
 <!-- ===========================
      PORTFOLIO HERO
 =========================== -->
 
-
 <section class="portfolio-hero">
-
 
 <div class="portfolio-wrapper">
 
-
-
-<span class="portfolio-tag">
+<span class="portfolio-tag"
+data-i18n="portfolio_tag">
 
 ENGINEERING PORTFOLIO
 
 </span>
 
-
-
-
-
-<h1>
+<h1 data-i18n="portfolio_title">
 
 Industrial Engineering
 Projects & Achievements
 
 </h1>
 
-
-
-
-
-<p>
+<p data-i18n="portfolio_description">
 
 Explore my engineering experience in
-industrial automation, electrical systems,
-PLC programming, motor drives,
-maintenance, and technical solutions.
+industrial automation,
+electrical systems,
+PLC programming,
+motor drives,
+maintenance,
+and technical solutions.
 
 </p>
 
-
-
 </div>
-
 
 </section>
 
@@ -197,125 +187,88 @@ maintenance, and technical solutions.
      FILTER
 =========================== -->
 
-
 <section class="portfolio-filter">
-
 
 <div class="filter-wrapper">
 
-
-<button class="filter-btn active">
+<button class="filter-btn active"
+data-i18n="filter_all">
 
 All
 
 </button>
 
-
-
-<button class="filter-btn">
+<button class="filter-btn"
+data-i18n="filter_automation">
 
 Automation
 
 </button>
 
-
-
-
-<button class="filter-btn">
+<button class="filter-btn"
+data-i18n="filter_electrical">
 
 Electrical
 
 </button>
 
-
-
-
-<button class="filter-btn">
+<button class="filter-btn"
+data-i18n="filter_plc">
 
 PLC
 
 </button>
 
-
-
-
-<button class="filter-btn">
+<button class="filter-btn"
+data-i18n="filter_drive">
 
 Drive System
 
 </button>
 
-
-
-
-<button class="filter-btn">
+<button class="filter-btn"
+data-i18n="filter_maintenance">
 
 Maintenance
 
 </button>
 
-
-
 </div>
 
-
 </section>
-
-
-
-
-
-
-
-
 
 <!-- ===========================
      FEATURED PROJECTS
 =========================== -->
 
-
 <section class="featured-projects">
-
 
 <div class="portfolio-container">
 
-
-
-
-
 <div class="section-heading">
 
-
-<span>
+<span data-i18n="featured_subtitle">
 
 FEATURED
 
 </span>
 
-
-
-<h2>
+<h2 data-i18n="featured_title">
 
 Featured Engineering Projects
 
 </h2>
 
-
-
-<p>
+<p data-i18n="featured_description">
 
 Selected industrial automation projects
 showcasing electrical control systems,
-motor drives, and commissioning experience.
+motor drives,
+and commissioning experience.
 
 </p>
 
-
 </div>
-
-
-
-
 
 
 
@@ -327,79 +280,49 @@ motor drives, and commissioning experience.
 
 
 
-
-
 <!-- PROJECT 01 -->
-
-
 
 <div class="project-card">
 
-
-
-<img 
+<img
 src="assets/projects/hoist-control/cover.jpg"
-
 alt="Renewal Hoist Control System">
-
-
-
-
 
 <div class="project-info">
 
-
-
-<span>
+<span data-i18n="project1_category">
 
 Industrial Automation
 
 </span>
 
-
-
-
-
-<h3>
+<h3 data-i18n="project1_title">
 
 Renewal Panel System Hoist Control
 
 </h3>
 
-
-
-
-
-<p>
+<p data-i18n="project1_desc">
 
 Complete renewal of an industrial hoist
 control panel using Toshiba Inverter
-including wiring, parameter setup,
-testing and commissioning.
+including wiring,
+parameter setup,
+testing,
+and commissioning.
 
 </p>
 
-
-
-
-
-<a href="projects/renewal-hoist-control.html">
+<a href="projects/renewal-hoist-control.html"
+data-i18n="project_view">
 
 View Case Study →
 
 </a>
 
-
-
-
 </div>
 
-
 </div>
-
-
-
-
 
 
 
@@ -407,75 +330,48 @@ View Case Study →
 
 <!-- PROJECT 02 -->
 
-
-
 <div class="project-card">
 
-
-
-<img 
+<img
 src="assets/projects/screw-machine/cover.jpg"
-
 alt="Screw Machine Control Panel">
-
-
-
-
 
 <div class="project-info">
 
-
-
-<span>
+<span data-i18n="project2_category">
 
 Industrial Automation
 
 </span>
 
-
-
-
-
-<h3>
+<h3 data-i18n="project2_title">
 
 Screw Machine Control Panel
 
 </h3>
 
-
-
-
-
-<p>
+<p data-i18n="project2_desc">
 
 Industrial control panel using Mitsubishi PLC,
-Mitsubishi Inverter, and Weintek HMI
-including programming, wiring,
-testing and commissioning.
+Mitsubishi Inverter,
+and Weintek HMI
+including programming,
+wiring,
+testing,
+and commissioning.
 
 </p>
 
-
-
-
-
-<a href="projects/screw-machine-control.html">
+<a href="projects/screw-machine-control.html"
+data-i18n="project_view">
 
 View Case Study →
 
 </a>
 
-
-
-
 </div>
 
-
 </div>
-
-
-
-
 
 
 
@@ -483,84 +379,49 @@ View Case Study →
 
 <!-- PROJECT 03 -->
 
-
-
 <div class="project-card">
 
-
-
-<img 
+<img
 src="assets/projects/sludge-dryer/cover.jpg"
-
 alt="Rotary Sludge Dryer Control Panel">
-
-
-
-
 
 <div class="project-info">
 
-
-
-<span>
+<span data-i18n="project3_category">
 
 Industrial Drive System
 
 </span>
 
-
-
-
-
-<h3>
+<h3 data-i18n="project3_title">
 
 Rotary Sludge Dryer Control Panel
 
 </h3>
 
-
-
-
-
-<p>
+<p data-i18n="project3_desc">
 
 New control panel using Schneider Inverter
 including electrical installation,
-testing and commissioning.
+testing,
+and commissioning.
 
 </p>
 
-
-
-
-
-<a href="projects/rotary-sludge-dryer.html">
+<a href="projects/rotary-sludge-dryer.html"
+data-i18n="project_view">
 
 View Case Study →
 
 </a>
 
-
-
+</div>
 
 </div>
 
-
 </div>
 
-
-
-
-
-
-
-
 </div>
-
-
-
-</div>
-
 
 </section>
 
@@ -568,48 +429,32 @@ View Case Study →
      TECHNICAL EXPERIENCE
 =========================== -->
 
-
 <section class="all-projects">
-
 
 <div class="portfolio-container">
 
-
-
 <div class="section-heading">
 
-
-<span>
+<span data-i18n="experience_subtitle">
 
 ENGINEERING EXPERIENCE
 
 </span>
 
-
-
-
-<h2>
+<h2 data-i18n="experience_title">
 
 Technical Experience
 
 </h2>
 
-
-
-
-<p>
+<p data-i18n="experience_description">
 
 Technical skills and industrial experience
 developed through hands-on engineering projects.
 
 </p>
 
-
-
 </div>
-
-
-
 
 
 
@@ -620,35 +465,25 @@ developed through hands-on engineering projects.
 
 
 
-
 <div class="project-item">
 
-
-
-<h3>
+<h3 data-i18n="experience1_title">
 
 PLC Programming & Automation
 
 </h3>
 
+<p data-i18n="experience1_desc">
 
-
-<p>
-
-Omron PLC, Mitsubishi PLC,
+Omron PLC,
+Mitsubishi PLC,
 industrial automation programming,
 control logic development,
 and troubleshooting.
 
 </p>
 
-
-
 </div>
-
-
-
-
 
 
 
@@ -656,32 +491,23 @@ and troubleshooting.
 
 <div class="project-item">
 
-
-
-<h3>
+<h3 data-i18n="experience2_title">
 
 Motor Drive Systems
 
 </h3>
 
+<p data-i18n="experience2_desc">
 
-
-<p>
-
-ABB ACS580, Toshiba Inverter,
+ABB ACS580,
+Toshiba Inverter,
 Schneider Inverter,
 Parker DC Drive configuration
 and commissioning.
 
 </p>
 
-
-
 </div>
-
-
-
-
 
 
 
@@ -689,48 +515,29 @@ and commissioning.
 
 <div class="project-item">
 
-
-
-<h3>
+<h3 data-i18n="experience3_title">
 
 Electrical Control Systems
 
 </h3>
 
-
-
-<p>
+<p data-i18n="experience3_desc">
 
 Industrial control panels,
 electrical wiring,
-testing, maintenance,
+testing,
+maintenance,
 and system improvement.
 
 </p>
 
-
+</div>
 
 </div>
 
-
-
-
-
-
 </div>
-
-
-
-</div>
-
 
 </section>
-
-
-
-
-
-
 
 
 
@@ -742,51 +549,34 @@ and system improvement.
      ACHIEVEMENTS
 =========================== -->
 
-
 <section class="professional-achievements">
-
 
 <div class="portfolio-container">
 
-
-
 <div class="section-heading">
 
-
-<span>
+<span data-i18n="achievement_subtitle">
 
 ACHIEVEMENTS
 
 </span>
 
-
-
-
-
-<h2>
+<h2 data-i18n="achievement_title">
 
 Professional Achievements
 
 </h2>
 
+<p data-i18n="achievement_description">
 
-
-
-
-<p>
-
-Certifications, language qualifications,
-and professional milestones supporting
-my engineering career.
+Certifications,
+language qualifications,
+and professional milestones
+supporting my engineering career.
 
 </p>
 
-
-
-
 </div>
-
-
 
 
 
@@ -800,13 +590,7 @@ my engineering career.
 
 
 
-
-
-
-
 <div class="achievement-card">
-
-
 
 <div class="achievement-icon">
 
@@ -814,37 +598,24 @@ my engineering career.
 
 </div>
 
-
-
-
-
-<h3>
+<h3 data-i18n="achievement1_title">
 
 German Language B1
 
 </h3>
 
-
-
-
-<p>
+<p data-i18n="achievement1_desc">
 
 TELC Certificate
 
 </p>
 
-
-
-
-
-<a href="#">
+<a href="#"
+data-i18n="achievement_button">
 
 View Certificate →
 
 </a>
-
-
-
 
 </div>
 
@@ -854,14 +625,7 @@ View Certificate →
 
 
 
-
-
-
-
-
 <div class="achievement-card">
-
-
 
 <div class="achievement-icon">
 
@@ -869,44 +633,26 @@ View Certificate →
 
 </div>
 
-
-
-
-
-<h3>
+<h3 data-i18n="achievement2_title">
 
 PLC Programming Training
 
 </h3>
 
-
-
-
-<p>
+<p data-i18n="achievement2_desc">
 
 Industrial Automation
 
 </p>
 
-
-
-
-
-<a href="#">
+<a href="#"
+data-i18n="achievement_button">
 
 View Certificate →
 
 </a>
 
-
-
-
 </div>
-
-
-
-
-
 
 
 
@@ -916,69 +662,38 @@ View Certificate →
 
 <div class="achievement-card">
 
-
-
 <div class="achievement-icon">
 
 📜
 
 </div>
 
-
-
-
-
-<h3>
+<h3 data-i18n="achievement3_title">
 
 Internship Certificate
 
 </h3>
 
-
-
-
-<p>
+<p data-i18n="achievement3_desc">
 
 Electrical Engineering
 
 </p>
 
-
-
-
-
-<a href="#">
+<a href="#"
+data-i18n="achievement_button">
 
 View Certificate →
 
 </a>
 
-
-
+</div>
 
 </div>
 
-
-
-
-
-
-
-
 </div>
-
-
-
-</div>
-
 
 </section>
-
-
-
-
-
-
 
 
 
@@ -990,18 +705,14 @@ View Certificate →
      FOOTER
 =========================== -->
 
-
 <footer class="footer">
 
-
-<p>
+<p data-i18n="footer_text">
 
 © 2026 Robi Septiawan.
 All Rights Reserved.
 
 </p>
-
-
 
 </footer>
 
@@ -1009,10 +720,14 @@ All Rights Reserved.
 
 
 
+<!-- LANGUAGE FILE -->
 
+<script src="translations/en.js"></script>
+<script src="translations/de.js"></script>
+<script src="translations/id.js"></script>
 
+<script src="js/language.js"></script>
 
 </body>
-
 
 </html>

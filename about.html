@@ -3,53 +3,60 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        About | Robi Septiawan
-    </title>
 
-    <!-- Google Font -->
+<title>
+About | Robi Septiawan
+</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- CSS -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/navbar.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/about.css">
 
-    <link rel="stylesheet" href="css/footer.css">
 
-    <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/navbar.css">
+
+<link rel="stylesheet" href="css/about.css">
+
+<link rel="stylesheet" href="css/footer.css">
+
+<link rel="stylesheet" href="css/responsive.css">
+
 
 </head>
 
-<body>
 
+
+<body>
 
 
 <!-- ===========================
         LOADING
 =========================== -->
 
+
 <div class="loading">
 
-    <div class="loader-logo">
+<div class="loader-logo">
 
-        RS.
-
-    </div>
+RS.
 
 </div>
+
+</div>
+
+
 
 
 
@@ -57,135 +64,243 @@
         NAVBAR
 =========================== -->
 
+
 <header>
+
 
 <nav class="navbar">
 
 
-    <a href="index.html" class="logo">
+<a href="index.html" class="logo">
 
-        RS.
+RS.
 
-    </a>
-
-
-
-    <ul class="nav-links">
-
-
-        <li>
-
-            <a href="index.html">
-
-                Home
-
-            </a>
-
-        </li>
-
-
-
-        <li>
-
-            <a href="about.html" class="active">
-
-                About
-
-            </a>
-
-        </li>
-
-
-
-        <li>
-
-            <a href="portfolio.html">
-
-                Portfolio
-
-            </a>
-
-        </li>
-
-
-    </ul>
+</a>
 
 
 
 
-    <div class="nav-right">
+
+<ul class="nav-links">
 
 
-        <button class="language">
+<li>
 
-            🌐 EN
+<a href="index.html"
+data-i18n="nav_home">
 
-        </button>
+Home
 
+</a>
 
-
-        <a href="contact.html" class="contact-btn">
-
-            Contact
-
-        </a>
-
-
-    </div>
+</li>
 
 
 
 
-    <div class="menu-toggle">
+<li>
 
-        ☰
+<a href="about.html"
+class="active"
+data-i18n="nav_about">
 
-    </div>
+About
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="portfolio.html"
+data-i18n="nav_portfolio">
+
+Portfolio
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+<div class="nav-right">
+
+
+
+<div class="language-switcher">
+
+
+<button class="language" type="button">
+
+
+🌐
+
+<span id="current-lang">
+
+EN
+
+</span>
+
+
+<span class="arrow">
+
+⌄
+
+</span>
+
+
+</button>
+
+
+
+
+
+<div class="language-dropdown">
+
+
+
+<button onclick="changeLanguage('en')">
+
+🇬🇧 English
+
+</button>
+
+
+
+<button onclick="changeLanguage('de')">
+
+🇩🇪 Deutsch
+
+</button>
+
+
+
+<button onclick="changeLanguage('id')">
+
+🇮🇩 Indonesia
+
+</button>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<a href="contact.html"
+class="contact-btn"
+data-i18n="nav_contact">
+
+Contact
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="menu-toggle">
+
+☰
+
+</div>
+
 
 
 </nav>
 
+
 </header>
+
 <!-- ======================================
         ABOUT HERO
 ====================================== -->
 
 <section class="about-hero">
 
-    <div class="about-hero-container">
 
-        <span class="about-subtitle">
+<div class="about-hero-container">
 
-            ABOUT ME
 
-        </span>
 
-        <h1>
+<span class="about-subtitle"
+data-i18n="about_subtitle">
 
-            Engineering Solutions Through
+ABOUT ME
 
-            <span>
+</span>
 
-                Automation & Innovation
 
-            </span>
 
-        </h1>
 
-        <p>
 
-            Electrical & Automation Engineer specializing in
-            industrial electrical systems,
-            PLC programming,
-            motor drives,
-            control panel systems,
-            and industrial automation.
+<h1 data-i18n="about_hero_title">
 
-        </p>
+Engineering Solutions Through
 
-    </div>
+<span>
+
+Automation & Innovation
+
+</span>
+
+</h1>
+
+
+
+
+
+<p data-i18n="about_hero_description">
+
+Electrical & Automation Engineer specializing in
+industrial electrical systems,
+PLC programming,
+motor drives,
+control panel systems,
+and industrial automation.
+
+</p>
+
+
+
+
+</div>
+
 
 </section>
+
+
+
+
+
 
 
 
@@ -193,84 +308,139 @@
         PROFESSIONAL SUMMARY
 ====================================== -->
 
+
 <section class="summary">
 
-    <div class="summary-container">
 
-        <!-- LEFT -->
-
-        <div class="summary-image">
-
-            <img
-            src="assets/images/about.png"
-            alt="Robi Septiawan">
-
-        </div>
+<div class="summary-container">
 
 
 
-        <!-- RIGHT -->
+<!-- LEFT -->
 
-        <div class="summary-content">
 
-            <span>
+<div class="summary-image">
 
-                PROFESSIONAL SUMMARY
 
-            </span>
+<img
+src="assets/images/about.png"
+alt="Robi Septiawan">
 
-            <h2>
 
-                Building Reliable
-                Industrial Automation
-                Solutions
-
-            </h2>
-
-            <p>
-
-                I am an Electrical & Automation Engineer with
-                practical experience in industrial electrical systems,
-                PLC programming,
-                control panel wiring,
-                electrical troubleshooting,
-                and industrial automation.
-
-            </p>
-
-            <p>
-
-                My passion is solving engineering challenges,
-                improving production efficiency,
-                and creating reliable automation systems
-                that help industries operate safely
-                and efficiently.
-
-            </p>
+</div>
 
 
 
-            <div class="summary-buttons">
 
-                <a href="assets/cv/Robi-Septiawan-CV.pdf"
-                class="btn-primary">
 
-                    Download CV
 
-                </a>
+<!-- RIGHT -->
 
-                <a href="experience.html"
-                class="btn-secondary">
 
-                    View Experience →
+<div class="summary-content">
 
-                </a>
 
-            </div>
 
-        </div>
+<span
+data-i18n="summary_subtitle">
 
-    </div>
+PROFESSIONAL SUMMARY
+
+</span>
+
+
+
+
+
+<h2
+data-i18n="summary_title">
+
+Building Reliable
+Industrial Automation
+Solutions
+
+</h2>
+
+
+
+
+
+
+
+<p
+data-i18n="summary_text_1">
+
+I am an Electrical & Automation Engineer with
+practical experience in industrial electrical systems,
+PLC programming,
+control panel wiring,
+electrical troubleshooting,
+and industrial automation.
+
+</p>
+
+
+
+
+
+
+<p
+data-i18n="summary_text_2">
+
+My passion is solving engineering challenges,
+improving production efficiency,
+and creating reliable automation systems
+that help industries operate safely
+and efficiently.
+
+</p>
+
+
+
+
+
+
+
+<div class="summary-buttons">
+
+
+
+<a href="assets/cv/Robi-Septiawan-CV.pdf"
+class="btn-primary"
+data-i18n="download_cv">
+
+Download CV
+
+</a>
+
+
+
+
+
+
+<a href="experience.html"
+class="btn-secondary"
+data-i18n="view_experience">
+
+View Experience →
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
 
 </section>
 
@@ -280,187 +450,291 @@
 
 <section class="journey">
 
-    <div class="journey-container">
 
-        <div class="section-title">
-
-            <span>
-
-                MY JOURNEY
-
-            </span>
-
-            <h2>
-
-                Career Timeline
-
-            </h2>
-
-        </div>
+<div class="journey-container">
 
 
 
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-
-                    2022
-
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>
-
-                        Internship (PKL)
-
-                    </h3>
-
-                    <p>
-
-                        Started my engineering journey by learning
-                        industrial electrical systems,
-                        maintenance,
-                        and control panel wiring.
-
-                    </p>
-
-                </div>
-
-            </div>
+<div class="section-title">
 
 
 
-            <div class="timeline-item">
+<span data-i18n="journey_subtitle">
 
-                <div class="timeline-year">
+MY JOURNEY
 
-                    2023
-
-                </div>
-
-                <div class="timeline-content">
-
-                    <h3>
-
-                        Electrical Technician
-
-                    </h3>
-
-                    <p>
-
-                        Worked on electrical maintenance,
-                        troubleshooting,
-                        installation,
-                        and preventive maintenance.
-
-                    </p>
-
-                </div>
-
-            </div>
+</span>
 
 
 
-            <div class="timeline-item">
 
-                <div class="timeline-year">
 
-                    2025
+<h2 data-i18n="journey_title">
 
-                </div>
+Career Timeline
 
-                <div class="timeline-content">
-
-                    <h3>
-
-                        Electrical & Automation Engineer
-
-                    </h3>
-
-                    <p>
-
-                        Focused on PLC,
-                        industrial automation,
-                        motor drives,
-                        electrical control systems,
-                        and commissioning.
-
-                    </p>
-
-                </div>
-
-            </div>
+</h2>
 
 
 
-        </div>
+</div>
 
-    </div>
+
+
+
+
+
+
+
+<div class="timeline">
+
+
+
+
+
+<div class="timeline-item">
+
+
+
+<div class="timeline-year">
+
+2022
+
+</div>
+
+
+
+
+
+<div class="timeline-content">
+
+
+
+<h3 data-i18n="journey_2022_title">
+
+Internship (PKL)
+
+</h3>
+
+
+
+
+
+<p data-i18n="journey_2022_desc">
+
+Started my engineering journey by learning
+industrial electrical systems,
+maintenance,
+and control panel wiring.
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+
+<div class="timeline-year">
+
+2023
+
+</div>
+
+
+
+
+
+<div class="timeline-content">
+
+
+
+<h3 data-i18n="journey_2023_title">
+
+Electrical Technician
+
+</h3>
+
+
+
+
+
+<p data-i18n="journey_2023_desc">
+
+Worked on electrical maintenance,
+troubleshooting,
+installation,
+and preventive maintenance.
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="timeline-item">
+
+
+
+<div class="timeline-year">
+
+2025
+
+</div>
+
+
+
+
+
+<div class="timeline-content">
+
+
+
+<h3 data-i18n="journey_2025_title">
+
+Electrical & Automation Engineer
+
+</h3>
+
+
+
+
+
+<p data-i18n="journey_2025_desc">
+
+Focused on PLC,
+industrial automation,
+motor drives,
+electrical control systems,
+and commissioning.
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
 
 </section>
-
-
 
 <!-- ======================================
         TECHNICAL TOOLBOX
 ====================================== -->
 
+
 <section class="toolbox">
 
-    <div class="toolbox-container">
 
-        <div class="section-title">
-
-            <span>
-
-                TECHNICAL TOOLBOX
-
-            </span>
-
-            <h2>
-
-                Technologies & Tools
-
-            </h2>
-
-        </div>
+<div class="toolbox-container">
 
 
 
-        <div class="toolbox-grid">
+<div class="section-title">
 
-            <span>PLC</span>
 
-            <span>HMI</span>
+<span data-i18n="toolbox_subtitle">
 
-            <span>SCADA</span>
+TECHNICAL TOOLBOX
 
-            <span>Omron</span>
+</span>
 
-            <span>Mitsubishi</span>
 
-            <span>ABB Drives</span>
 
-            <span>Schneider</span>
 
-            <span>Siemens</span>
 
-            <span>AutoCAD</span>
+<h2 data-i18n="toolbox_title">
 
-            <span>EPLAN</span>
+Technologies & Tools
 
-            <span>Control Panel</span>
+</h2>
 
-            <span>Industrial Automation</span>
 
-        </div>
 
-    </div>
+</div>
+
+
+
+
+
+
+<div class="toolbox-grid">
+
+
+<span>PLC</span>
+
+<span>HMI</span>
+
+<span>SCADA</span>
+
+<span>Omron</span>
+
+<span>Mitsubishi</span>
+
+<span>ABB Drives</span>
+
+<span>Schneider</span>
+
+<span>Siemens</span>
+
+<span>AutoCAD</span>
+
+<span>EPLAN</span>
+
+<span>Control Panel</span>
+
+<span>Industrial Automation</span>
+
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
+
+
+
+
 
 
 
@@ -468,130 +742,265 @@
         LANGUAGES
 ====================================== -->
 
+
 <section class="languages">
 
-    <div class="languages-container">
 
-        <div class="section-title">
-
-            <span>
-
-                LANGUAGES
-
-            </span>
-
-            <h2>
-
-                Communication Skills
-
-            </h2>
-
-        </div>
+<div class="languages-container">
 
 
 
-        <div class="language-list">
+<div class="section-title">
 
-            <div class="language-item">
 
-                <h3>
+<span data-i18n="language_subtitle">
 
-                    🇮🇩 Indonesian
+LANGUAGES
 
-                </h3>
-
-                <span>
-
-                    Native
-
-                </span>
-
-            </div>
+</span>
 
 
 
-            <div class="language-item">
-
-                <h3>
-
-                    🇬🇧 English
-
-                </h3>
-
-                <span>
-
-                    Intermediate
-
-                </span>
-
-            </div>
 
 
 
-            <div class="language-item">
+<h2 data-i18n="language_title">
 
-                <h3>
+Communication Skills
 
-                    🇩🇪 German
+</h2>
 
-                </h3>
 
-                <span>
 
-                    B1
+</div>
 
-                </span>
 
-            </div>
 
-        </div>
 
-    </div>
+
+
+
+
+<div class="language-list">
+
+
+
+
+
+<div class="language-item">
+
+
+
+<h3>
+
+🇮🇩 Indonesian
+
+</h3>
+
+
+
+
+<span data-i18n="language_native">
+
+Native
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="language-item">
+
+
+
+<h3>
+
+🇬🇧 English
+
+</h3>
+
+
+
+
+<span data-i18n="language_english">
+
+Intermediate
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="language-item">
+
+
+
+<h3>
+
+🇩🇪 German
+
+</h3>
+
+
+
+
+<span data-i18n="language_german">
+
+B1
+
+</span>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
 
 </section>
-
-
 
 <!-- ======================================
         CTA
 ====================================== -->
 
+
 <section class="about-cta">
 
-    <div class="about-cta-container">
 
-        <h2>
+<div class="about-cta-container">
 
-            Interested in Working Together?
 
-        </h2>
 
-        <p>
+<h2 data-i18n="cta_title">
 
-            Feel free to explore my engineering experience
-            or download my CV for more details.
+Interested in Working Together?
 
-        </p>
+</h2>
 
-        <div class="cta-buttons">
 
-            <a href="experience.html" class="btn-primary">
 
-                View Experience
 
-            </a>
 
-            <a href="assets/cv/Robi-Septiawan-CV.pdf" class="btn-secondary">
+<p data-i18n="cta_description">
 
-                Download CV
+Feel free to explore my engineering experience
+or download my CV for more details.
 
-            </a>
+</p>
 
-        </div>
 
-    </div>
+
+
+
+
+
+<div class="cta-buttons">
+
+
+
+<a href="experience.html"
+class="btn-primary"
+data-i18n="view_experience">
+
+View Experience
+
+</a>
+
+
+
+
+
+<a href="assets/cv/Robi-Septiawan-CV.pdf"
+class="btn-secondary"
+data-i18n="download_cv">
+
+Download CV
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
 
 </section>
+
+
+
+
+
+
+
+<!-- ===========================
+        FOOTER
+=========================== -->
+
+
+<footer class="footer">
+
+
+<p data-i18n="footer_text">
+
+© 2026 Robi Septiawan.
+All Rights Reserved.
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+<!-- ===========================
+        LANGUAGE SCRIPT
+=========================== -->
+
+
+<script src="translations/en.js"></script>
+
+<script src="translations/de.js"></script>
+
+<script src="translations/id.js"></script>
+
+
+<script src="js/language.js"></script>
+
 
 
 
